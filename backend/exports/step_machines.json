@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "step_id": "STEP-001",
+    "machine_id": "MAC-001",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 2,
+    "step_id": "STEP-002",
+    "machine_id": "MAC-002",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 3,
+    "step_id": "STEP-003",
+    "machine_id": "MAC-003",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 4,
+    "step_id": "STEP-004",
+    "machine_id": "MAC-004",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 5,
+    "step_id": "STEP-005",
+    "machine_id": "MAC-005",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 6,
+    "step_id": "STEP-006",
+    "machine_id": "MAC-006",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 7,
+    "step_id": "STEP-007",
+    "machine_id": "MAC-007",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 8,
+    "step_id": "STEP-008",
+    "machine_id": "MAC-008",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 9,
+    "step_id": "STEP-009",
+    "machine_id": "MAC-009",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 10,
+    "step_id": "STEP-010",
+    "machine_id": "MAC-010",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 11,
+    "step_id": "STEP-011",
+    "machine_id": "MAC-011",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 12,
+    "step_id": "STEP-012",
+    "machine_id": "MAC-012",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 13,
+    "step_id": "STEP-013",
+    "machine_id": "MAC-013",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 14,
+    "step_id": "STEP-014",
+    "machine_id": "MAC-014",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 15,
+    "step_id": "STEP-015",
+    "machine_id": "MAC-015",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 16,
+    "step_id": "STEP-016",
+    "machine_id": "MAC-016",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 17,
+    "step_id": "STEP-017",
+    "machine_id": "MAC-017",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 18,
+    "step_id": "STEP-018",
+    "machine_id": "MAC-018",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 19,
+    "step_id": "STEP-019",
+    "machine_id": "MAC-019",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 20,
+    "step_id": "STEP-020",
+    "machine_id": "MAC-020",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 21,
+    "step_id": "STEP-021",
+    "machine_id": "MAC-021",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 22,
+    "step_id": "STEP-022",
+    "machine_id": "MAC-022",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 23,
+    "step_id": "STEP-023",
+    "machine_id": "MAC-023",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 24,
+    "step_id": "STEP-024",
+    "machine_id": "MAC-024",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 25,
+    "step_id": "STEP-025",
+    "machine_id": "MAC-025",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 26,
+    "step_id": "STEP-026",
+    "machine_id": "MAC-001",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 27,
+    "step_id": "STEP-027",
+    "machine_id": "MAC-002",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 28,
+    "step_id": "STEP-028",
+    "machine_id": "MAC-003",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 29,
+    "step_id": "STEP-029",
+    "machine_id": "MAC-004",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 30,
+    "step_id": "STEP-030",
+    "machine_id": "MAC-005",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 31,
+    "step_id": "STEP-031",
+    "machine_id": "MAC-006",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 32,
+    "step_id": "STEP-032",
+    "machine_id": "MAC-007",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 33,
+    "step_id": "STEP-033",
+    "machine_id": "MAC-008",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 34,
+    "step_id": "STEP-034",
+    "machine_id": "MAC-009",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": 35,
+    "step_id": "STEP-035",
+    "machine_id": "MAC-010",
+    "is_primary": true,
+    "setup_time_mins": 15.0,
+    "created_at": "2026-01-01T08:00:00"
+  }
+]

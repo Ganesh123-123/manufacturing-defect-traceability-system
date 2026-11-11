@@ -1,0 +1,352 @@
+[
+  {
+    "id": "STEP-001",
+    "step_code": "STEP-001",
+    "name": "Raw Material Receipt & Assay",
+    "sequence_number": 10,
+    "standard_duration_mins": 13.8,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Raw Material Receipt & Assay",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-002",
+    "step_code": "STEP-002",
+    "name": "Rough Machining",
+    "sequence_number": 20,
+    "standard_duration_mins": 13.1,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Rough Machining",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-003",
+    "step_code": "STEP-003",
+    "name": "Precision CNC Turning",
+    "sequence_number": 30,
+    "standard_duration_mins": 28.1,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Precision CNC Turning",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-004",
+    "step_code": "STEP-004",
+    "name": "Milling & Pocketing",
+    "sequence_number": 40,
+    "standard_duration_mins": 28.4,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Milling & Pocketing",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-005",
+    "step_code": "STEP-005",
+    "name": "Deburring & Ultrasonic Wash",
+    "sequence_number": 50,
+    "standard_duration_mins": 21.6,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Deburring & Ultrasonic Wash",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-006",
+    "step_code": "STEP-006",
+    "name": "Thermal Heat Treatment",
+    "sequence_number": 60,
+    "standard_duration_mins": 21.4,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Thermal Heat Treatment",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-007",
+    "step_code": "STEP-007",
+    "name": "Surface Anodizing & Passivation",
+    "sequence_number": 70,
+    "standard_duration_mins": 16.8,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Surface Anodizing & Passivation",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-008",
+    "step_code": "STEP-008",
+    "name": "Micro-soldering & SMT Placement",
+    "sequence_number": 80,
+    "standard_duration_mins": 29.3,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Micro-soldering & SMT Placement",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-009",
+    "step_code": "STEP-009",
+    "name": "Sub-Assembly Insertion",
+    "sequence_number": 90,
+    "standard_duration_mins": 11.0,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Sub-Assembly Insertion",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-010",
+    "step_code": "STEP-010",
+    "name": "Automated Optical Inspection",
+    "sequence_number": 100,
+    "standard_duration_mins": 20.1,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Automated Optical Inspection",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-011",
+    "step_code": "STEP-011",
+    "name": "Torque & Fastener Assembly",
+    "sequence_number": 110,
+    "standard_duration_mins": 24.2,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Torque & Fastener Assembly",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-012",
+    "step_code": "STEP-012",
+    "name": "Leak Testing & Pressure Decay",
+    "sequence_number": 120,
+    "standard_duration_mins": 17.8,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Leak Testing & Pressure Decay",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-013",
+    "step_code": "STEP-013",
+    "name": "Laser Marking & Barcoding",
+    "sequence_number": 130,
+    "standard_duration_mins": 19.0,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Laser Marking & Barcoding",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-014",
+    "step_code": "STEP-014",
+    "name": "Functional Bench Test",
+    "sequence_number": 140,
+    "standard_duration_mins": 16.8,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Functional Bench Test",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-015",
+    "step_code": "STEP-015",
+    "name": "Final Cleanroom Packaging",
+    "sequence_number": 150,
+    "standard_duration_mins": 17.9,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Final Cleanroom Packaging",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-016",
+    "step_code": "STEP-016",
+    "name": "Raw Material Receipt & Assay Stage-2",
+    "sequence_number": 160,
+    "standard_duration_mins": 10.9,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Raw Material Receipt & Assay Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-017",
+    "step_code": "STEP-017",
+    "name": "Rough Machining Stage-2",
+    "sequence_number": 170,
+    "standard_duration_mins": 27.4,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Rough Machining Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-018",
+    "step_code": "STEP-018",
+    "name": "Precision CNC Turning Stage-2",
+    "sequence_number": 180,
+    "standard_duration_mins": 21.1,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Precision CNC Turning Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-019",
+    "step_code": "STEP-019",
+    "name": "Milling & Pocketing Stage-2",
+    "sequence_number": 190,
+    "standard_duration_mins": 13.1,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Milling & Pocketing Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-020",
+    "step_code": "STEP-020",
+    "name": "Deburring & Ultrasonic Wash Stage-2",
+    "sequence_number": 200,
+    "standard_duration_mins": 25.7,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Deburring & Ultrasonic Wash Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-021",
+    "step_code": "STEP-021",
+    "name": "Thermal Heat Treatment Stage-2",
+    "sequence_number": 210,
+    "standard_duration_mins": 25.1,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Thermal Heat Treatment Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-022",
+    "step_code": "STEP-022",
+    "name": "Surface Anodizing & Passivation Stage-2",
+    "sequence_number": 220,
+    "standard_duration_mins": 25.6,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Surface Anodizing & Passivation Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-023",
+    "step_code": "STEP-023",
+    "name": "Micro-soldering & SMT Placement Stage-2",
+    "sequence_number": 230,
+    "standard_duration_mins": 18.8,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Micro-soldering & SMT Placement Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-024",
+    "step_code": "STEP-024",
+    "name": "Sub-Assembly Insertion Stage-2",
+    "sequence_number": 240,
+    "standard_duration_mins": 14.4,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Sub-Assembly Insertion Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-025",
+    "step_code": "STEP-025",
+    "name": "Automated Optical Inspection Stage-2",
+    "sequence_number": 250,
+    "standard_duration_mins": 24.1,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Automated Optical Inspection Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-026",
+    "step_code": "STEP-026",
+    "name": "Torque & Fastener Assembly Stage-2",
+    "sequence_number": 260,
+    "standard_duration_mins": 25.0,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Torque & Fastener Assembly Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-027",
+    "step_code": "STEP-027",
+    "name": "Leak Testing & Pressure Decay Stage-2",
+    "sequence_number": 270,
+    "standard_duration_mins": 26.1,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Leak Testing & Pressure Decay Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-028",
+    "step_code": "STEP-028",
+    "name": "Laser Marking & Barcoding Stage-2",
+    "sequence_number": 280,
+    "standard_duration_mins": 15.4,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Laser Marking & Barcoding Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-029",
+    "step_code": "STEP-029",
+    "name": "Functional Bench Test Stage-2",
+    "sequence_number": 290,
+    "standard_duration_mins": 24.9,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Functional Bench Test Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-030",
+    "step_code": "STEP-030",
+    "name": "Final Cleanroom Packaging Stage-2",
+    "sequence_number": 300,
+    "standard_duration_mins": 19.9,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Final Cleanroom Packaging Stage-2",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-031",
+    "step_code": "STEP-031",
+    "name": "Raw Material Receipt & Assay Stage-3",
+    "sequence_number": 310,
+    "standard_duration_mins": 19.7,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Raw Material Receipt & Assay Stage-3",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-032",
+    "step_code": "STEP-032",
+    "name": "Rough Machining Stage-3",
+    "sequence_number": 320,
+    "standard_duration_mins": 10.2,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Rough Machining Stage-3",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-033",
+    "step_code": "STEP-033",
+    "name": "Precision CNC Turning Stage-3",
+    "sequence_number": 330,
+    "standard_duration_mins": 19.1,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Precision CNC Turning Stage-3",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-034",
+    "step_code": "STEP-034",
+    "name": "Milling & Pocketing Stage-3",
+    "sequence_number": 340,
+    "standard_duration_mins": 21.7,
+    "inspection_required": true,
+    "description": "Standard operating procedure for Milling & Pocketing Stage-3",
+    "created_at": "2025-07-05T08:00:00"
+  },
+  {
+    "id": "STEP-035",
+    "step_code": "STEP-035",
+    "name": "Deburring & Ultrasonic Wash Stage-3",
+    "sequence_number": 350,
+    "standard_duration_mins": 14.5,
+    "inspection_required": false,
+    "description": "Standard operating procedure for Deburring & Ultrasonic Wash Stage-3",
+    "created_at": "2025-07-05T08:00:00"
+  }
+]

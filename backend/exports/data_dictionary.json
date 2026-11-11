@@ -1,0 +1,80 @@
+{
+  "entities": {
+    "products": {
+      "description": "Catalog of manufactured items and end products",
+      "id_format": "SKU-000001",
+      "fields": {
+        "id": "Primary Key, SKU code",
+        "name": "Full product nomenclature",
+        "category": "Industrial classification",
+        "target_cycle_time_mins": "Target takt/cycle time in minutes",
+        "standard_cost": "Baseline manufacturing standard cost in USD"
+      }
+    },
+    "suppliers": {
+      "description": "Approved material and raw component vendors",
+      "id_format": "SUP-000001",
+      "fields": {
+        "id": "Primary Key, Supplier ID",
+        "name": "Company trading name",
+        "code": "Unique vendor identifier (e.g. VEND-0001)",
+        "rating": "Vendor quality rating (1.0 - 5.0)"
+      }
+    },
+    "material_lots": {
+      "description": "Received batches of components with pedigree",
+      "id_format": "LOT-SUP-000001-2026-000001",
+      "fields": {
+        "id": "Primary Key, Unique Lot Number",
+        "supplier_id": "Foreign Key to suppliers",
+        "initial_quantity": "Received quantity",
+        "remaining_quantity": "Current available unconsumed quantity"
+      }
+    },
+    "production_orders": {
+      "description": "Shop floor work orders authorizing assembly",
+      "id_format": "WO-2026-000001",
+      "fields": {
+        "id": "Primary Key, Work Order ID",
+        "product_id": "Foreign Key to products",
+        "target_quantity": "Planned batch units",
+        "completed_quantity": "Passed conforming units",
+        "rework_quantity": "Reworked units",
+        "scrapped_quantity": "Scrapped non-conforming units"
+      }
+    },
+    "inspection_results": {
+      "description": "Quality control inspection gate records",
+      "id_format": "INSP-WO-2026-000001-001",
+      "fields": {
+        "id": "Primary Key, Inspection Result ID",
+        "production_order_id": "Foreign Key to production_orders",
+        "inspected_quantity": "Units examined",
+        "passed_quantity": "Conforming units",
+        "failed_quantity": "Non-conforming units",
+        "result": "PASS / FAIL / CONDITIONAL_PASS"
+      }
+    },
+    "defects": {
+      "description": "Non-conformance incident records",
+      "id_format": "DEF-2026-000001",
+      "fields": {
+        "id": "Primary Key, Defect ID",
+        "inspection_result_id": "Foreign Key to inspection_results",
+        "material_lot_id": "Foreign Key to material_lots (traceability root)",
+        "severity": "CRITICAL / MAJOR / MINOR",
+        "disposition": "REWORK / SCRAP / USE_AS_IS / RETURN_TO_VENDOR"
+      }
+    },
+    "corrective_actions": {
+      "description": "CAPA investigation, containment, and verification records",
+      "id_format": "CAPA-2026-000001",
+      "fields": {
+        "id": "Primary Key, CAPA ID",
+        "defect_id": "Foreign Key to defects",
+        "status": "OPEN / IN_PROGRESS / CONTAINMENT / PENDING_VERIFICATION / VERIFIED / CLOSED",
+        "verification_date": "Timestamp of formal verification before closure"
+      }
+    }
+  }
+}

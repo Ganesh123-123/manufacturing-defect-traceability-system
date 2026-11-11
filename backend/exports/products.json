@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "SKU-000001",
+    "name": "Powertrain Components Model-B001",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.8,
+    "standard_cost": 279.61,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000002",
+    "name": "Electronic Control Units Model-C002",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.9,
+    "standard_cost": 64.65,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000003",
+    "name": "Precision Hydraulic Valves Model-D003",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 38.8,
+    "standard_cost": 138.33,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000004",
+    "name": "Chassis Structural Castings Model-E004",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 10.1,
+    "standard_cost": 379.33,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000005",
+    "name": "Optical Sensor Housings Model-F005",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.6,
+    "standard_cost": 125.54,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000006",
+    "name": "Thermal Heat Exchangers Model-G006",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.8,
+    "standard_cost": 329.33,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000007",
+    "name": "Aerospace Fasteners Model-H007",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.0,
+    "standard_cost": 88.17,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000008",
+    "name": "Electric Drive Rotors Model-I008",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 16.8,
+    "standard_cost": 105.87,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000009",
+    "name": "Powertrain Components Model-J009",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.1,
+    "standard_cost": 284.05,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000010",
+    "name": "Electronic Control Units Model-K010",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 10.2,
+    "standard_cost": 91.54,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000011",
+    "name": "Precision Hydraulic Valves Model-L011",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.9,
+    "standard_cost": 185.82,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000012",
+    "name": "Chassis Structural Castings Model-M012",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.0,
+    "standard_cost": 382.66,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000013",
+    "name": "Optical Sensor Housings Model-N013",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 15.2,
+    "standard_cost": 230.26,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000014",
+    "name": "Thermal Heat Exchangers Model-O014",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 42.0,
+    "standard_cost": 272.98,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000015",
+    "name": "Aerospace Fasteners Model-P015",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 28.0,
+    "standard_cost": 253.03,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000016",
+    "name": "Electric Drive Rotors Model-Q016",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 13.3,
+    "standard_cost": 116.96,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000017",
+    "name": "Powertrain Components Model-R017",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.5,
+    "standard_cost": 213.64,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000018",
+    "name": "Electronic Control Units Model-S018",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 13.1,
+    "standard_cost": 230.03,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000019",
+    "name": "Precision Hydraulic Valves Model-T019",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.8,
+    "standard_cost": 63.55,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000020",
+    "name": "Chassis Structural Castings Model-U020",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.9,
+    "standard_cost": 419.19,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  },
+  {
+    "id": "SKU-000021",
+    "name": "Optical Sensor Housings Model-V021",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 17.3,
+    "standard_cost": 68.43,
+    "is_active": true,
+    "created_at": "2026-01-22T08:00:00"
+  },
+  {
+    "id": "SKU-000022",
+    "name": "Thermal Heat Exchangers Model-W022",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.5,
+    "standard_cost": 83.84,
+    "is_active": true,
+    "created_at": "2026-01-23T08:00:00"
+  },
+  {
+    "id": "SKU-000023",
+    "name": "Aerospace Fasteners Model-X023",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 27.7,
+    "standard_cost": 47.33,
+    "is_active": true,
+    "created_at": "2026-01-24T08:00:00"
+  },
+  {
+    "id": "SKU-000024",
+    "name": "Electric Drive Rotors Model-Y024",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.6,
+    "standard_cost": 134.09,
+    "is_active": true,
+    "created_at": "2026-01-25T08:00:00"
+  },
+  {
+    "id": "SKU-000025",
+    "name": "Powertrain Components Model-Z025",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 44.8,
+    "standard_cost": 239.21,
+    "is_active": true,
+    "created_at": "2026-01-26T08:00:00"
+  },
+  {
+    "id": "SKU-000026",
+    "name": "Electronic Control Units Model-A026",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.6,
+    "standard_cost": 260.86,
+    "is_active": true,
+    "created_at": "2026-01-27T08:00:00"
+  },
+  {
+    "id": "SKU-000027",
+    "name": "Precision Hydraulic Valves Model-B027",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.6,
+    "standard_cost": 193.08,
+    "is_active": true,
+    "created_at": "2026-01-28T08:00:00"
+  },
+  {
+    "id": "SKU-000028",
+    "name": "Chassis Structural Castings Model-C028",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.0,
+    "standard_cost": 285.21,
+    "is_active": true,
+    "created_at": "2026-01-29T08:00:00"
+  },
+  {
+    "id": "SKU-000029",
+    "name": "Optical Sensor Housings Model-D029",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 44.7,
+    "standard_cost": 47.16,
+    "is_active": true,
+    "created_at": "2026-01-30T08:00:00"
+  },
+  {
+    "id": "SKU-000030",
+    "name": "Thermal Heat Exchangers Model-E030",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 26.8,
+    "standard_cost": 141.36,
+    "is_active": true,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": "SKU-000031",
+    "name": "Aerospace Fasteners Model-F031",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.0,
+    "standard_cost": 332.21,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000032",
+    "name": "Electric Drive Rotors Model-G032",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.7,
+    "standard_cost": 254.2,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000033",
+    "name": "Powertrain Components Model-H033",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.8,
+    "standard_cost": 314.49,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000034",
+    "name": "Electronic Control Units Model-I034",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.6,
+    "standard_cost": 392.17,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000035",
+    "name": "Precision Hydraulic Valves Model-J035",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 26.4,
+    "standard_cost": 386.99,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000036",
+    "name": "Chassis Structural Castings Model-K036",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.2,
+    "standard_cost": 410.36,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000037",
+    "name": "Optical Sensor Housings Model-L037",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 30.4,
+    "standard_cost": 65.45,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000038",
+    "name": "Thermal Heat Exchangers Model-M038",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.6,
+    "standard_cost": 249.48,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000039",
+    "name": "Aerospace Fasteners Model-N039",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 10.5,
+    "standard_cost": 253.14,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000040",
+    "name": "Electric Drive Rotors Model-O040",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.1,
+    "standard_cost": 231.35,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000041",
+    "name": "Powertrain Components Model-P041",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.9,
+    "standard_cost": 126.44,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000042",
+    "name": "Electronic Control Units Model-Q042",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 44.5,
+    "standard_cost": 304.48,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000043",
+    "name": "Precision Hydraulic Valves Model-R043",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.1,
+    "standard_cost": 405.94,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000044",
+    "name": "Chassis Structural Castings Model-S044",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.5,
+    "standard_cost": 338.66,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000045",
+    "name": "Optical Sensor Housings Model-T045",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 42.4,
+    "standard_cost": 158.41,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000046",
+    "name": "Thermal Heat Exchangers Model-U046",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.2,
+    "standard_cost": 149.38,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000047",
+    "name": "Aerospace Fasteners Model-V047",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 28.0,
+    "standard_cost": 205.84,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000048",
+    "name": "Electric Drive Rotors Model-W048",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.9,
+    "standard_cost": 376.16,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000049",
+    "name": "Powertrain Components Model-X049",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 22.4,
+    "standard_cost": 342.56,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000050",
+    "name": "Electronic Control Units Model-Y050",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.3,
+    "standard_cost": 117.14,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  },
+  {
+    "id": "SKU-000051",
+    "name": "Precision Hydraulic Valves Model-Z051",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 27.5,
+    "standard_cost": 233.66,
+    "is_active": true,
+    "created_at": "2026-01-22T08:00:00"
+  },
+  {
+    "id": "SKU-000052",
+    "name": "Chassis Structural Castings Model-A052",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.2,
+    "standard_cost": 106.62,
+    "is_active": true,
+    "created_at": "2026-01-23T08:00:00"
+  },
+  {
+    "id": "SKU-000053",
+    "name": "Optical Sensor Housings Model-B053",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 44.9,
+    "standard_cost": 60.49,
+    "is_active": true,
+    "created_at": "2026-01-24T08:00:00"
+  },
+  {
+    "id": "SKU-000054",
+    "name": "Thermal Heat Exchangers Model-C054",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 32.4,
+    "standard_cost": 431.54,
+    "is_active": true,
+    "created_at": "2026-01-25T08:00:00"
+  },
+  {
+    "id": "SKU-000055",
+    "name": "Aerospace Fasteners Model-D055",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 40.1,
+    "standard_cost": 325.33,
+    "is_active": true,
+    "created_at": "2026-01-26T08:00:00"
+  },
+  {
+    "id": "SKU-000056",
+    "name": "Electric Drive Rotors Model-E056",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 19.3,
+    "standard_cost": 445.92,
+    "is_active": true,
+    "created_at": "2026-01-27T08:00:00"
+  },
+  {
+    "id": "SKU-000057",
+    "name": "Powertrain Components Model-F057",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.5,
+    "standard_cost": 252.05,
+    "is_active": true,
+    "created_at": "2026-01-28T08:00:00"
+  },
+  {
+    "id": "SKU-000058",
+    "name": "Electronic Control Units Model-G058",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.2,
+    "standard_cost": 94.92,
+    "is_active": true,
+    "created_at": "2026-01-29T08:00:00"
+  },
+  {
+    "id": "SKU-000059",
+    "name": "Precision Hydraulic Valves Model-H059",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.2,
+    "standard_cost": 428.9,
+    "is_active": true,
+    "created_at": "2026-01-30T08:00:00"
+  },
+  {
+    "id": "SKU-000060",
+    "name": "Chassis Structural Castings Model-I060",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.1,
+    "standard_cost": 420.34,
+    "is_active": true,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": "SKU-000061",
+    "name": "Optical Sensor Housings Model-J061",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.7,
+    "standard_cost": 106.67,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000062",
+    "name": "Thermal Heat Exchangers Model-K062",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 18.6,
+    "standard_cost": 274.52,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000063",
+    "name": "Aerospace Fasteners Model-L063",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 10.6,
+    "standard_cost": 219.81,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000064",
+    "name": "Electric Drive Rotors Model-M064",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 30.2,
+    "standard_cost": 81.17,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000065",
+    "name": "Powertrain Components Model-N065",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 24.2,
+    "standard_cost": 371.63,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000066",
+    "name": "Electronic Control Units Model-O066",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.0,
+    "standard_cost": 400.11,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000067",
+    "name": "Precision Hydraulic Valves Model-P067",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.3,
+    "standard_cost": 124.17,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000068",
+    "name": "Chassis Structural Castings Model-Q068",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.6,
+    "standard_cost": 336.19,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000069",
+    "name": "Optical Sensor Housings Model-R069",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 23.3,
+    "standard_cost": 260.21,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000070",
+    "name": "Thermal Heat Exchangers Model-S070",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.2,
+    "standard_cost": 291.0,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000071",
+    "name": "Aerospace Fasteners Model-T071",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 15.4,
+    "standard_cost": 243.65,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000072",
+    "name": "Electric Drive Rotors Model-U072",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 17.1,
+    "standard_cost": 208.36,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000073",
+    "name": "Powertrain Components Model-V073",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.2,
+    "standard_cost": 433.72,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000074",
+    "name": "Electronic Control Units Model-W074",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 26.6,
+    "standard_cost": 421.29,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000075",
+    "name": "Precision Hydraulic Valves Model-X075",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 40.9,
+    "standard_cost": 208.06,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000076",
+    "name": "Chassis Structural Castings Model-Y076",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 24.8,
+    "standard_cost": 120.88,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000077",
+    "name": "Optical Sensor Housings Model-Z077",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.9,
+    "standard_cost": 179.54,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000078",
+    "name": "Thermal Heat Exchangers Model-A078",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 44.7,
+    "standard_cost": 373.67,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000079",
+    "name": "Aerospace Fasteners Model-B079",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.8,
+    "standard_cost": 309.73,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000080",
+    "name": "Electric Drive Rotors Model-C080",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.9,
+    "standard_cost": 135.31,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  },
+  {
+    "id": "SKU-000081",
+    "name": "Powertrain Components Model-D081",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.4,
+    "standard_cost": 160.62,
+    "is_active": true,
+    "created_at": "2026-01-22T08:00:00"
+  },
+  {
+    "id": "SKU-000082",
+    "name": "Electronic Control Units Model-E082",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 16.3,
+    "standard_cost": 238.78,
+    "is_active": true,
+    "created_at": "2026-01-23T08:00:00"
+  },
+  {
+    "id": "SKU-000083",
+    "name": "Precision Hydraulic Valves Model-F083",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.0,
+    "standard_cost": 204.92,
+    "is_active": true,
+    "created_at": "2026-01-24T08:00:00"
+  },
+  {
+    "id": "SKU-000084",
+    "name": "Chassis Structural Castings Model-G084",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.2,
+    "standard_cost": 135.61,
+    "is_active": true,
+    "created_at": "2026-01-25T08:00:00"
+  },
+  {
+    "id": "SKU-000085",
+    "name": "Optical Sensor Housings Model-H085",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.9,
+    "standard_cost": 441.74,
+    "is_active": true,
+    "created_at": "2026-01-26T08:00:00"
+  },
+  {
+    "id": "SKU-000086",
+    "name": "Thermal Heat Exchangers Model-I086",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 17.8,
+    "standard_cost": 251.91,
+    "is_active": true,
+    "created_at": "2026-01-27T08:00:00"
+  },
+  {
+    "id": "SKU-000087",
+    "name": "Aerospace Fasteners Model-J087",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 26.1,
+    "standard_cost": 73.31,
+    "is_active": true,
+    "created_at": "2026-01-28T08:00:00"
+  },
+  {
+    "id": "SKU-000088",
+    "name": "Electric Drive Rotors Model-K088",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 27.8,
+    "standard_cost": 276.39,
+    "is_active": true,
+    "created_at": "2026-01-29T08:00:00"
+  },
+  {
+    "id": "SKU-000089",
+    "name": "Powertrain Components Model-L089",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 41.2,
+    "standard_cost": 424.64,
+    "is_active": true,
+    "created_at": "2026-01-30T08:00:00"
+  },
+  {
+    "id": "SKU-000090",
+    "name": "Electronic Control Units Model-M090",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.4,
+    "standard_cost": 75.81,
+    "is_active": true,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": "SKU-000091",
+    "name": "Precision Hydraulic Valves Model-N091",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.5,
+    "standard_cost": 416.65,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000092",
+    "name": "Chassis Structural Castings Model-O092",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.4,
+    "standard_cost": 355.33,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000093",
+    "name": "Optical Sensor Housings Model-P093",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.5,
+    "standard_cost": 312.37,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000094",
+    "name": "Thermal Heat Exchangers Model-Q094",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 34.0,
+    "standard_cost": 110.69,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000095",
+    "name": "Aerospace Fasteners Model-R095",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.8,
+    "standard_cost": 377.63,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000096",
+    "name": "Electric Drive Rotors Model-S096",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 28.2,
+    "standard_cost": 306.41,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000097",
+    "name": "Powertrain Components Model-T097",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 43.5,
+    "standard_cost": 436.87,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000098",
+    "name": "Electronic Control Units Model-U098",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.4,
+    "standard_cost": 268.35,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000099",
+    "name": "Precision Hydraulic Valves Model-V099",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 19.4,
+    "standard_cost": 168.84,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000100",
+    "name": "Chassis Structural Castings Model-W100",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.0,
+    "standard_cost": 188.87,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000101",
+    "name": "Optical Sensor Housings Model-X101",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.3,
+    "standard_cost": 98.72,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000102",
+    "name": "Thermal Heat Exchangers Model-Y102",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.5,
+    "standard_cost": 401.86,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000103",
+    "name": "Aerospace Fasteners Model-Z103",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.0,
+    "standard_cost": 117.99,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000104",
+    "name": "Electric Drive Rotors Model-A104",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.8,
+    "standard_cost": 399.37,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000105",
+    "name": "Powertrain Components Model-B105",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.1,
+    "standard_cost": 126.35,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000106",
+    "name": "Electronic Control Units Model-C106",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 43.9,
+    "standard_cost": 399.36,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000107",
+    "name": "Precision Hydraulic Valves Model-D107",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.1,
+    "standard_cost": 321.86,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000108",
+    "name": "Chassis Structural Castings Model-E108",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.3,
+    "standard_cost": 184.97,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000109",
+    "name": "Optical Sensor Housings Model-F109",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 22.4,
+    "standard_cost": 186.21,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000110",
+    "name": "Thermal Heat Exchangers Model-G110",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 38.8,
+    "standard_cost": 181.98,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  },
+  {
+    "id": "SKU-000111",
+    "name": "Aerospace Fasteners Model-H111",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 16.8,
+    "standard_cost": 240.56,
+    "is_active": true,
+    "created_at": "2026-01-22T08:00:00"
+  },
+  {
+    "id": "SKU-000112",
+    "name": "Electric Drive Rotors Model-I112",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 30.0,
+    "standard_cost": 287.23,
+    "is_active": true,
+    "created_at": "2026-01-23T08:00:00"
+  },
+  {
+    "id": "SKU-000113",
+    "name": "Powertrain Components Model-J113",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 44.6,
+    "standard_cost": 93.82,
+    "is_active": true,
+    "created_at": "2026-01-24T08:00:00"
+  },
+  {
+    "id": "SKU-000114",
+    "name": "Electronic Control Units Model-K114",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.7,
+    "standard_cost": 300.94,
+    "is_active": true,
+    "created_at": "2026-01-25T08:00:00"
+  },
+  {
+    "id": "SKU-000115",
+    "name": "Precision Hydraulic Valves Model-L115",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.4,
+    "standard_cost": 51.79,
+    "is_active": true,
+    "created_at": "2026-01-26T08:00:00"
+  },
+  {
+    "id": "SKU-000116",
+    "name": "Chassis Structural Castings Model-M116",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.6,
+    "standard_cost": 93.65,
+    "is_active": true,
+    "created_at": "2026-01-27T08:00:00"
+  },
+  {
+    "id": "SKU-000117",
+    "name": "Optical Sensor Housings Model-N117",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.7,
+    "standard_cost": 158.82,
+    "is_active": true,
+    "created_at": "2026-01-28T08:00:00"
+  },
+  {
+    "id": "SKU-000118",
+    "name": "Thermal Heat Exchangers Model-O118",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.2,
+    "standard_cost": 316.79,
+    "is_active": true,
+    "created_at": "2026-01-29T08:00:00"
+  },
+  {
+    "id": "SKU-000119",
+    "name": "Aerospace Fasteners Model-P119",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 23.3,
+    "standard_cost": 59.36,
+    "is_active": true,
+    "created_at": "2026-01-30T08:00:00"
+  },
+  {
+    "id": "SKU-000120",
+    "name": "Electric Drive Rotors Model-Q120",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.0,
+    "standard_cost": 257.64,
+    "is_active": true,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": "SKU-000121",
+    "name": "Powertrain Components Model-R121",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.5,
+    "standard_cost": 288.18,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000122",
+    "name": "Electronic Control Units Model-S122",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 15.1,
+    "standard_cost": 352.83,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000123",
+    "name": "Precision Hydraulic Valves Model-T123",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 22.1,
+    "standard_cost": 157.57,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000124",
+    "name": "Chassis Structural Castings Model-U124",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 19.1,
+    "standard_cost": 347.63,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000125",
+    "name": "Optical Sensor Housings Model-V125",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 30.1,
+    "standard_cost": 283.8,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000126",
+    "name": "Thermal Heat Exchangers Model-W126",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.5,
+    "standard_cost": 438.72,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000127",
+    "name": "Aerospace Fasteners Model-X127",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.5,
+    "standard_cost": 51.5,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000128",
+    "name": "Electric Drive Rotors Model-Y128",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 13.8,
+    "standard_cost": 389.26,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000129",
+    "name": "Powertrain Components Model-Z129",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.4,
+    "standard_cost": 333.14,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000130",
+    "name": "Electronic Control Units Model-A130",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.5,
+    "standard_cost": 175.38,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000131",
+    "name": "Precision Hydraulic Valves Model-B131",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 23.1,
+    "standard_cost": 66.72,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000132",
+    "name": "Chassis Structural Castings Model-C132",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.9,
+    "standard_cost": 400.86,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000133",
+    "name": "Optical Sensor Housings Model-D133",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.8,
+    "standard_cost": 186.87,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000134",
+    "name": "Thermal Heat Exchangers Model-E134",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 34.3,
+    "standard_cost": 313.73,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000135",
+    "name": "Aerospace Fasteners Model-F135",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 22.8,
+    "standard_cost": 311.88,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000136",
+    "name": "Electric Drive Rotors Model-G136",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.0,
+    "standard_cost": 59.95,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000137",
+    "name": "Powertrain Components Model-H137",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.3,
+    "standard_cost": 157.42,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000138",
+    "name": "Electronic Control Units Model-I138",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 17.4,
+    "standard_cost": 360.69,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000139",
+    "name": "Precision Hydraulic Valves Model-J139",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.8,
+    "standard_cost": 68.14,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000140",
+    "name": "Chassis Structural Castings Model-K140",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 23.9,
+    "standard_cost": 70.03,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  },
+  {
+    "id": "SKU-000141",
+    "name": "Optical Sensor Housings Model-L141",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 40.0,
+    "standard_cost": 111.39,
+    "is_active": true,
+    "created_at": "2026-01-22T08:00:00"
+  },
+  {
+    "id": "SKU-000142",
+    "name": "Thermal Heat Exchangers Model-M142",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 41.7,
+    "standard_cost": 407.78,
+    "is_active": true,
+    "created_at": "2026-01-23T08:00:00"
+  },
+  {
+    "id": "SKU-000143",
+    "name": "Aerospace Fasteners Model-N143",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.8,
+    "standard_cost": 138.67,
+    "is_active": true,
+    "created_at": "2026-01-24T08:00:00"
+  },
+  {
+    "id": "SKU-000144",
+    "name": "Electric Drive Rotors Model-O144",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 40.9,
+    "standard_cost": 400.69,
+    "is_active": true,
+    "created_at": "2026-01-25T08:00:00"
+  },
+  {
+    "id": "SKU-000145",
+    "name": "Powertrain Components Model-P145",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.2,
+    "standard_cost": 247.67,
+    "is_active": true,
+    "created_at": "2026-01-26T08:00:00"
+  },
+  {
+    "id": "SKU-000146",
+    "name": "Electronic Control Units Model-Q146",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.1,
+    "standard_cost": 302.19,
+    "is_active": true,
+    "created_at": "2026-01-27T08:00:00"
+  },
+  {
+    "id": "SKU-000147",
+    "name": "Precision Hydraulic Valves Model-R147",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.1,
+    "standard_cost": 180.0,
+    "is_active": true,
+    "created_at": "2026-01-28T08:00:00"
+  },
+  {
+    "id": "SKU-000148",
+    "name": "Chassis Structural Castings Model-S148",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 22.4,
+    "standard_cost": 113.65,
+    "is_active": true,
+    "created_at": "2026-01-29T08:00:00"
+  },
+  {
+    "id": "SKU-000149",
+    "name": "Optical Sensor Housings Model-T149",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 42.0,
+    "standard_cost": 282.33,
+    "is_active": true,
+    "created_at": "2026-01-30T08:00:00"
+  },
+  {
+    "id": "SKU-000150",
+    "name": "Thermal Heat Exchangers Model-U150",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 18.0,
+    "standard_cost": 364.62,
+    "is_active": true,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": "SKU-000151",
+    "name": "Aerospace Fasteners Model-V151",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.6,
+    "standard_cost": 444.42,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000152",
+    "name": "Electric Drive Rotors Model-W152",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.6,
+    "standard_cost": 445.09,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000153",
+    "name": "Powertrain Components Model-X153",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 24.3,
+    "standard_cost": 170.45,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000154",
+    "name": "Electronic Control Units Model-Y154",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 23.2,
+    "standard_cost": 148.68,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000155",
+    "name": "Precision Hydraulic Valves Model-Z155",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.4,
+    "standard_cost": 345.44,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000156",
+    "name": "Chassis Structural Castings Model-A156",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.2,
+    "standard_cost": 359.84,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000157",
+    "name": "Optical Sensor Housings Model-B157",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.4,
+    "standard_cost": 72.78,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000158",
+    "name": "Thermal Heat Exchangers Model-C158",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.5,
+    "standard_cost": 411.41,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000159",
+    "name": "Aerospace Fasteners Model-D159",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 36.9,
+    "standard_cost": 136.53,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000160",
+    "name": "Electric Drive Rotors Model-E160",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 11.9,
+    "standard_cost": 62.38,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000161",
+    "name": "Powertrain Components Model-F161",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 10.8,
+    "standard_cost": 341.06,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000162",
+    "name": "Electronic Control Units Model-G162",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 10.9,
+    "standard_cost": 330.63,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000163",
+    "name": "Precision Hydraulic Valves Model-H163",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 38.4,
+    "standard_cost": 151.57,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000164",
+    "name": "Chassis Structural Castings Model-I164",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 39.8,
+    "standard_cost": 374.78,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000165",
+    "name": "Optical Sensor Housings Model-J165",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.4,
+    "standard_cost": 283.43,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000166",
+    "name": "Thermal Heat Exchangers Model-K166",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 43.7,
+    "standard_cost": 102.92,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000167",
+    "name": "Aerospace Fasteners Model-L167",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.9,
+    "standard_cost": 197.46,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000168",
+    "name": "Electric Drive Rotors Model-M168",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.3,
+    "standard_cost": 343.87,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000169",
+    "name": "Powertrain Components Model-N169",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 14.0,
+    "standard_cost": 414.85,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000170",
+    "name": "Electronic Control Units Model-O170",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 12.6,
+    "standard_cost": 300.26,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  },
+  {
+    "id": "SKU-000171",
+    "name": "Precision Hydraulic Valves Model-P171",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.5,
+    "standard_cost": 205.02,
+    "is_active": true,
+    "created_at": "2026-01-22T08:00:00"
+  },
+  {
+    "id": "SKU-000172",
+    "name": "Chassis Structural Castings Model-Q172",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.7,
+    "standard_cost": 112.68,
+    "is_active": true,
+    "created_at": "2026-01-23T08:00:00"
+  },
+  {
+    "id": "SKU-000173",
+    "name": "Optical Sensor Housings Model-R173",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 15.6,
+    "standard_cost": 113.01,
+    "is_active": true,
+    "created_at": "2026-01-24T08:00:00"
+  },
+  {
+    "id": "SKU-000174",
+    "name": "Thermal Heat Exchangers Model-S174",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 38.8,
+    "standard_cost": 448.39,
+    "is_active": true,
+    "created_at": "2026-01-25T08:00:00"
+  },
+  {
+    "id": "SKU-000175",
+    "name": "Aerospace Fasteners Model-T175",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 18.7,
+    "standard_cost": 192.59,
+    "is_active": true,
+    "created_at": "2026-01-26T08:00:00"
+  },
+  {
+    "id": "SKU-000176",
+    "name": "Electric Drive Rotors Model-U176",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 26.9,
+    "standard_cost": 58.31,
+    "is_active": true,
+    "created_at": "2026-01-27T08:00:00"
+  },
+  {
+    "id": "SKU-000177",
+    "name": "Powertrain Components Model-V177",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 17.5,
+    "standard_cost": 152.57,
+    "is_active": true,
+    "created_at": "2026-01-28T08:00:00"
+  },
+  {
+    "id": "SKU-000178",
+    "name": "Electronic Control Units Model-W178",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 31.5,
+    "standard_cost": 121.21,
+    "is_active": true,
+    "created_at": "2026-01-29T08:00:00"
+  },
+  {
+    "id": "SKU-000179",
+    "name": "Precision Hydraulic Valves Model-X179",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.5,
+    "standard_cost": 416.18,
+    "is_active": true,
+    "created_at": "2026-01-30T08:00:00"
+  },
+  {
+    "id": "SKU-000180",
+    "name": "Chassis Structural Castings Model-Y180",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.7,
+    "standard_cost": 101.04,
+    "is_active": true,
+    "created_at": "2026-01-01T08:00:00"
+  },
+  {
+    "id": "SKU-000181",
+    "name": "Optical Sensor Housings Model-Z181",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 20.1,
+    "standard_cost": 48.96,
+    "is_active": true,
+    "created_at": "2026-01-02T08:00:00"
+  },
+  {
+    "id": "SKU-000182",
+    "name": "Thermal Heat Exchangers Model-A182",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.4,
+    "standard_cost": 218.23,
+    "is_active": true,
+    "created_at": "2026-01-03T08:00:00"
+  },
+  {
+    "id": "SKU-000183",
+    "name": "Aerospace Fasteners Model-B183",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 37.2,
+    "standard_cost": 390.66,
+    "is_active": true,
+    "created_at": "2026-01-04T08:00:00"
+  },
+  {
+    "id": "SKU-000184",
+    "name": "Electric Drive Rotors Model-C184",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 25.9,
+    "standard_cost": 436.9,
+    "is_active": true,
+    "created_at": "2026-01-05T08:00:00"
+  },
+  {
+    "id": "SKU-000185",
+    "name": "Powertrain Components Model-D185",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 32.0,
+    "standard_cost": 159.21,
+    "is_active": true,
+    "created_at": "2026-01-06T08:00:00"
+  },
+  {
+    "id": "SKU-000186",
+    "name": "Electronic Control Units Model-E186",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.8,
+    "standard_cost": 252.35,
+    "is_active": true,
+    "created_at": "2026-01-07T08:00:00"
+  },
+  {
+    "id": "SKU-000187",
+    "name": "Precision Hydraulic Valves Model-F187",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.0,
+    "standard_cost": 81.47,
+    "is_active": true,
+    "created_at": "2026-01-08T08:00:00"
+  },
+  {
+    "id": "SKU-000188",
+    "name": "Chassis Structural Castings Model-G188",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 23.5,
+    "standard_cost": 126.35,
+    "is_active": true,
+    "created_at": "2026-01-09T08:00:00"
+  },
+  {
+    "id": "SKU-000189",
+    "name": "Optical Sensor Housings Model-H189",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 30.3,
+    "standard_cost": 247.38,
+    "is_active": true,
+    "created_at": "2026-01-10T08:00:00"
+  },
+  {
+    "id": "SKU-000190",
+    "name": "Thermal Heat Exchangers Model-I190",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.5,
+    "standard_cost": 402.03,
+    "is_active": true,
+    "created_at": "2026-01-11T08:00:00"
+  },
+  {
+    "id": "SKU-000191",
+    "name": "Aerospace Fasteners Model-J191",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 32.1,
+    "standard_cost": 100.6,
+    "is_active": true,
+    "created_at": "2026-01-12T08:00:00"
+  },
+  {
+    "id": "SKU-000192",
+    "name": "Electric Drive Rotors Model-K192",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 15.1,
+    "standard_cost": 433.27,
+    "is_active": true,
+    "created_at": "2026-01-13T08:00:00"
+  },
+  {
+    "id": "SKU-000193",
+    "name": "Powertrain Components Model-L193",
+    "category": "Powertrain Components",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 13.2,
+    "standard_cost": 330.58,
+    "is_active": true,
+    "created_at": "2026-01-14T08:00:00"
+  },
+  {
+    "id": "SKU-000194",
+    "name": "Electronic Control Units Model-M194",
+    "category": "Electronic Control Units",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.3,
+    "standard_cost": 419.06,
+    "is_active": true,
+    "created_at": "2026-01-15T08:00:00"
+  },
+  {
+    "id": "SKU-000195",
+    "name": "Precision Hydraulic Valves Model-N195",
+    "category": "Precision Hydraulic Valves",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 35.7,
+    "standard_cost": 173.55,
+    "is_active": true,
+    "created_at": "2026-01-16T08:00:00"
+  },
+  {
+    "id": "SKU-000196",
+    "name": "Chassis Structural Castings Model-O196",
+    "category": "Chassis Structural Castings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 33.1,
+    "standard_cost": 138.97,
+    "is_active": true,
+    "created_at": "2026-01-17T08:00:00"
+  },
+  {
+    "id": "SKU-000197",
+    "name": "Optical Sensor Housings Model-P197",
+    "category": "Optical Sensor Housings",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 21.8,
+    "standard_cost": 134.48,
+    "is_active": true,
+    "created_at": "2026-01-18T08:00:00"
+  },
+  {
+    "id": "SKU-000198",
+    "name": "Thermal Heat Exchangers Model-Q198",
+    "category": "Thermal Heat Exchangers",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 29.3,
+    "standard_cost": 291.18,
+    "is_active": true,
+    "created_at": "2026-01-19T08:00:00"
+  },
+  {
+    "id": "SKU-000199",
+    "name": "Aerospace Fasteners Model-R199",
+    "category": "Aerospace Fasteners",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 24.8,
+    "standard_cost": 45.21,
+    "is_active": true,
+    "created_at": "2026-01-20T08:00:00"
+  },
+  {
+    "id": "SKU-000200",
+    "name": "Electric Drive Rotors Model-S200",
+    "category": "Electric Drive Rotors",
+    "unit_of_measure": "PCS",
+    "target_cycle_time_mins": 13.1,
+    "standard_cost": 327.36,
+    "is_active": true,
+    "created_at": "2026-01-21T08:00:00"
+  }
+]

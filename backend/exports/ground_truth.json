@@ -1,0 +1,47 @@
+[
+  {
+    "anomaly_id": "SCENARIO_1",
+    "issue_type": "BROKEN_FOREIGN_KEY_LOT",
+    "affected_entity": "Defect",
+    "affected_record_id": "DEF-2026-001594",
+    "expected_decision": "DETECT_BROKEN_FOREIGN_KEY_OR_TRACEABILITY_REFERENCE",
+    "severity": "CRITICAL",
+    "description": "Defect DEF-2026-001594 points to nonexistent material lot LOT-SUP-999999-2026-999999"
+  },
+  {
+    "anomaly_id": "SCENARIO_2",
+    "issue_type": "BOM_MATERIAL_NOT_CONSUMED",
+    "affected_entity": "ProductionOrder",
+    "affected_record_id": "WO-2026-000001",
+    "expected_decision": "GENERATE_MATERIAL_CONSUMPTION_EXCEPTION",
+    "severity": "HIGH",
+    "description": "Completed order WO-2026-000001 is missing consumed BOM component 1"
+  },
+  {
+    "anomaly_id": "SCENARIO_3",
+    "issue_type": "CAPA_CLOSED_BEFORE_VERIFICATION",
+    "affected_entity": "CorrectiveAction",
+    "affected_record_id": "CAPA-2026-001195",
+    "expected_decision": "REJECT_CLOSURE_AND_RECORD_LIFECYCLE_VIOLATION",
+    "severity": "MAJOR",
+    "description": "CAPA CAPA-2026-001195 transitioned to CLOSED without mandatory verification"
+  },
+  {
+    "anomaly_id": "SCENARIO_4",
+    "issue_type": "DEFECT_COUNT_EXCEEDS_INSPECTED_QUANTITY",
+    "affected_entity": "Defect",
+    "affected_record_id": "DEF-2026-000001",
+    "expected_decision": "REJECT_INVALID_INSPECTION_OR_DEFECT_QUANTITY",
+    "severity": "CRITICAL",
+    "description": "Defect quantity (25) exceeds inspected quantity (10) on inspection INSP-WO-2026-001000-005"
+  },
+  {
+    "anomaly_id": "SCENARIO_5",
+    "issue_type": "TRACEABILITY_CHAIN_BROKEN",
+    "affected_entity": "Defect",
+    "affected_record_id": "DEF-2026-001593",
+    "expected_decision": "IDENTIFY_MISSING_UPSTREAM_OR_DOWNSTREAM_RELATIONSHIP",
+    "severity": "CRITICAL",
+    "description": "Defect DEF-2026-001593 references non-existent production order WO-2026-999999"
+  }
+]

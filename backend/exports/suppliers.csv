@@ -1,0 +1,51 @@
+id,code,name,contact_email,contact_phone,country,rating,status,created_at
+SUP-000001,VEND-0001,Gomez Campbell and Thompson Industrial,quality@vend-0001.example.com,+1-555-891-8660,USA,4.31,ACTIVE,2025-10-03T08:00:00
+SUP-000002,VEND-0002,Hall Inc Industrial,quality@vend-0002.example.com,+1-555-871-4082,USA,3.97,ACTIVE,2025-10-03T08:00:00
+SUP-000003,VEND-0003,Petersen Anderson and Gonzalez Industrial,quality@vend-0003.example.com,+1-555-315-5352,Japan,4.82,ACTIVE,2025-10-03T08:00:00
+SUP-000004,VEND-0004,Fowler-Gallegos Industrial,quality@vend-0004.example.com,+1-555-374-2551,USA,4.98,ACTIVE,2025-10-03T08:00:00
+SUP-000005,VEND-0005,Rodriguez Lee and Hernandez Industrial,quality@vend-0005.example.com,+1-555-889-8811,USA,4.9,ACTIVE,2025-10-03T08:00:00
+SUP-000006,VEND-0006,Robinson Group Industrial,quality@vend-0006.example.com,+1-555-882-8575,Germany,4.99,ACTIVE,2025-10-03T08:00:00
+SUP-000007,VEND-0007,Chapman LLC Industrial,quality@vend-0007.example.com,+1-555-419-6213,USA,4.0,ACTIVE,2025-10-03T08:00:00
+SUP-000008,VEND-0008,Richards Group Industrial,quality@vend-0008.example.com,+1-555-360-1911,USA,4.02,ACTIVE,2025-10-03T08:00:00
+SUP-000009,VEND-0009,Brown and Sons Industrial,quality@vend-0009.example.com,+1-555-135-7095,Japan,3.83,ACTIVE,2025-10-03T08:00:00
+SUP-000010,VEND-0010,Ellis Inc Industrial,quality@vend-0010.example.com,+1-555-897-5406,USA,4.67,ACTIVE,2025-10-03T08:00:00
+SUP-000011,VEND-0011,Walker Mora and Cook Industrial,quality@vend-0011.example.com,+1-555-935-8427,USA,4.83,ACTIVE,2025-10-03T08:00:00
+SUP-000012,VEND-0012,Kim Group Industrial,quality@vend-0012.example.com,+1-555-898-9855,Germany,3.84,ACTIVE,2025-10-03T08:00:00
+SUP-000013,VEND-0013,Simmons Ltd Industrial,quality@vend-0013.example.com,+1-555-142-4930,USA,4.77,ACTIVE,2025-10-03T08:00:00
+SUP-000014,VEND-0014,Martinez Group Industrial,quality@vend-0014.example.com,+1-555-910-2404,USA,4.94,ACTIVE,2025-10-03T08:00:00
+SUP-000015,VEND-0015,Clark Brown and Jones Industrial,quality@vend-0015.example.com,+1-555-364-9983,Japan,4.04,ON_PROBATION,2025-10-03T08:00:00
+SUP-000016,VEND-0016,Evans and Sons Industrial,quality@vend-0016.example.com,+1-555-263-6354,USA,4.11,ACTIVE,2025-10-03T08:00:00
+SUP-000017,VEND-0017,Garcia Group Industrial,quality@vend-0017.example.com,+1-555-289-5101,USA,4.95,ACTIVE,2025-10-03T08:00:00
+SUP-000018,VEND-0018,Carroll Group Industrial,quality@vend-0018.example.com,+1-555-888-6784,Germany,4.41,ACTIVE,2025-10-03T08:00:00
+SUP-000019,VEND-0019,Garrett-Stevenson Industrial,quality@vend-0019.example.com,+1-555-115-1530,USA,4.83,ACTIVE,2025-10-03T08:00:00
+SUP-000020,VEND-0020,Diaz PLC Industrial,quality@vend-0020.example.com,+1-555-584-2906,USA,4.78,ACTIVE,2025-10-03T08:00:00
+SUP-000021,VEND-0021,Smith-Castillo Industrial,quality@vend-0021.example.com,+1-555-835-3977,Japan,3.94,ACTIVE,2025-10-03T08:00:00
+SUP-000022,VEND-0022,Dyer Ltd Industrial,quality@vend-0022.example.com,+1-555-389-4126,USA,3.9,ACTIVE,2025-10-03T08:00:00
+SUP-000023,VEND-0023,Torres PLC Industrial,quality@vend-0023.example.com,+1-555-284-4263,USA,4.65,ACTIVE,2025-10-03T08:00:00
+SUP-000024,VEND-0024,Rodgers Ortega and Simon Industrial,quality@vend-0024.example.com,+1-555-544-3064,Germany,4.63,ACTIVE,2025-10-03T08:00:00
+SUP-000025,VEND-0025,Mcdonald-Richard Industrial,quality@vend-0025.example.com,+1-555-881-3115,USA,4.79,ACTIVE,2025-10-03T08:00:00
+SUP-000026,VEND-0026,Johnson LLC Industrial,quality@vend-0026.example.com,+1-555-640-9466,USA,4.72,ACTIVE,2025-10-03T08:00:00
+SUP-000027,VEND-0027,Lawrence Browning and Blair Industrial,quality@vend-0027.example.com,+1-555-748-4318,Japan,4.66,ACTIVE,2025-10-03T08:00:00
+SUP-000028,VEND-0028,Hughes LLC Industrial,quality@vend-0028.example.com,+1-555-263-3261,USA,4.66,ACTIVE,2025-10-03T08:00:00
+SUP-000029,VEND-0029,Smith-Daniel Industrial,quality@vend-0029.example.com,+1-555-349-3306,USA,4.66,ACTIVE,2025-10-03T08:00:00
+SUP-000030,VEND-0030,Harris Odom and Davidson Industrial,quality@vend-0030.example.com,+1-555-211-2232,Germany,4.89,ON_PROBATION,2025-10-03T08:00:00
+SUP-000031,VEND-0031,Grant Norris and Hunt Industrial,quality@vend-0031.example.com,+1-555-306-9695,USA,4.4,ACTIVE,2025-10-03T08:00:00
+SUP-000032,VEND-0032,Frost Ramirez and Beck Industrial,quality@vend-0032.example.com,+1-555-440-8753,USA,4.87,ACTIVE,2025-10-03T08:00:00
+SUP-000033,VEND-0033,Stewart-Gould Industrial,quality@vend-0033.example.com,+1-555-125-9550,Japan,4.77,ACTIVE,2025-10-03T08:00:00
+SUP-000034,VEND-0034,Roth Kelly and Navarro Industrial,quality@vend-0034.example.com,+1-555-531-3381,USA,4.89,ACTIVE,2025-10-03T08:00:00
+SUP-000035,VEND-0035,Thompson-Mason Industrial,quality@vend-0035.example.com,+1-555-428-7713,USA,4.89,ACTIVE,2025-10-03T08:00:00
+SUP-000036,VEND-0036,Robertson-Hayes Industrial,quality@vend-0036.example.com,+1-555-261-8106,Germany,4.66,ACTIVE,2025-10-03T08:00:00
+SUP-000037,VEND-0037,Bright Johnson and Bowman Industrial,quality@vend-0037.example.com,+1-555-463-7111,USA,4.01,ACTIVE,2025-10-03T08:00:00
+SUP-000038,VEND-0038,Holt-Adams Industrial,quality@vend-0038.example.com,+1-555-540-9410,USA,4.23,ACTIVE,2025-10-03T08:00:00
+SUP-000039,VEND-0039,Chang Dixon and Flowers Industrial,quality@vend-0039.example.com,+1-555-550-6755,Japan,4.52,ACTIVE,2025-10-03T08:00:00
+SUP-000040,VEND-0040,Pope Group Industrial,quality@vend-0040.example.com,+1-555-879-7600,USA,4.74,ACTIVE,2025-10-03T08:00:00
+SUP-000041,VEND-0041,Parks-Trevino Industrial,quality@vend-0041.example.com,+1-555-760-3809,USA,4.79,ACTIVE,2025-10-03T08:00:00
+SUP-000042,VEND-0042,Hernandez and Sons Industrial,quality@vend-0042.example.com,+1-555-591-6076,Germany,4.36,ACTIVE,2025-10-03T08:00:00
+SUP-000043,VEND-0043,Dennis Franklin and Shaw Industrial,quality@vend-0043.example.com,+1-555-622-7001,USA,4.33,ACTIVE,2025-10-03T08:00:00
+SUP-000044,VEND-0044,Davis-Sullivan Industrial,quality@vend-0044.example.com,+1-555-751-6183,USA,4.63,ACTIVE,2025-10-03T08:00:00
+SUP-000045,VEND-0045,Edwards Inc Industrial,quality@vend-0045.example.com,+1-555-232-8561,Japan,4.85,ON_PROBATION,2025-10-03T08:00:00
+SUP-000046,VEND-0046,Parks Smith and Nelson Industrial,quality@vend-0046.example.com,+1-555-754-4322,USA,3.89,ACTIVE,2025-10-03T08:00:00
+SUP-000047,VEND-0047,Gray-Schmidt Industrial,quality@vend-0047.example.com,+1-555-402-8230,USA,4.06,ACTIVE,2025-10-03T08:00:00
+SUP-000048,VEND-0048,Weber Inc Industrial,quality@vend-0048.example.com,+1-555-133-6594,Germany,3.86,ACTIVE,2025-10-03T08:00:00
+SUP-000049,VEND-0049,Robinson and Sons Industrial,quality@vend-0049.example.com,+1-555-709-7577,USA,3.96,ACTIVE,2025-10-03T08:00:00
+SUP-000050,VEND-0050,Rollins-Garcia Industrial,quality@vend-0050.example.com,+1-555-175-8294,USA,3.92,ACTIVE,2025-10-03T08:00:00

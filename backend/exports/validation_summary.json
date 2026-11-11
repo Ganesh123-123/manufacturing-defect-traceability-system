@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-11-11T06:20:52.056644",
+  "total_records": 45176,
+  "entity_counts": {
+    "products": 200,
+    "suppliers": 50,
+    "material_lots": 2000,
+    "production_orders": 5000,
+    "boms": 601,
+    "machines": 25,
+    "process_steps": 35,
+    "inspection_plans": 200,
+    "inspection_results": 20000,
+    "defects": 1594,
+    "corrective_actions": 1195,
+    "material_consumptions": 14276
+  },
+  "total_checks": 47254,
+  "passed_checks": 47248,
+  "failed_checks": 6,
+  "validation_status": "ANOMALIES_DETECTED",
+  "detected_anomalies_count": 6,
+  "detected_anomalies": [
+    {
+      "anomaly_id": "SCENARIO_1",
+      "check": "broken_foreign_key_lot",
+      "entity": "Defect",
+      "record_id": "DEF-2026-001594",
+      "detail": "Defect references non-existent material lot: LOT-SUP-999999-2026-999999",
+      "severity": "CRITICAL"
+    },
+    {
+      "check": "inspection_quantity_sum",
+      "entity": "InspectionResult",
+      "record_id": "INSP-WO-2026-001000-005",
+      "detail": "Inspection sum mismatch: 100 + 0 != 10"
+    },
+    {
+      "anomaly_id": "SCENARIO_4",
+      "check": "defect_exceeds_inspected",
+      "entity": "Defect",
+      "record_id": "DEF-2026-000001",
+      "detail": "Defect quantity (25) exceeds inspected quantity (10)",
+      "severity": "CRITICAL"
+    },
+    {
+      "anomaly_id": "SCENARIO_3",
+      "check": "capa_closure_without_verification",
+      "entity": "CorrectiveAction",
+      "record_id": "CAPA-2026-001195",
+      "detail": "CAPA CAPA-2026-001195 was marked CLOSED without formal verification record",
+      "severity": "MAJOR"
+    },
+    {
+      "anomaly_id": "SCENARIO_2",
+      "check": "bom_material_not_consumed",
+      "entity": "ProductionOrder",
+      "record_id": "WO-2026-000001",
+      "detail": "BOM component Thermal Interface Pad (MAT-THERMAL-INTE-0001) not consumed for order WO-2026-000001",
+      "severity": "HIGH"
+    },
+    {
+      "anomaly_id": "SCENARIO_5",
+      "check": "broken_traceability_chain",
+      "entity": "Defect",
+      "record_id": "DEF-2026-001593",
+      "detail": "Defect DEF-2026-001593 has disconnected production order link",
+      "severity": "CRITICAL"
+    }
+  ]
+}

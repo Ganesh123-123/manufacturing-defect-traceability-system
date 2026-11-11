@@ -1,0 +1,169 @@
+/**
+ * Main Single Page Application Router & UI Controller
+ */
+class App {
+    constructor() {
+        this.currentPage = "dashboard";
+        this.init();
+    }
+
+    async init() {
+        this.setupNavigation();
+        this.checkServerHealth();
+        // Periodically poll server health
+        setInterval(() => this.checkServerHealth(), 15000);
+
+        // Check hash or default to dashboard
+        const hash = window.location.hash.replace("#", "") || "dashboard";
+        this.navigate(hash);
+    }
+
+    setupNavigation() {
+        document.querySelectorAll(".sidebar-menu a[data-page]").forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const page = link.getAttribute("data-page");
+                this.navigate(page);
+            });
+        });
+
+        window.addEventListener("hashchange", () => {
+            const hash = window.location.hash.replace("#", "");
+            if (hash && hash !== this.currentPage) {
+                this.navigate(hash);
+            }
+        });
+    }
+
+    navigate(pageName) {
+        this.currentPage = pageName;
+        window.location.hash = pageName;
+
+        // Update active class on sidebar
+        document.querySelectorAll(".sidebar-menu a[data-page]").forEach(link => {
+            if (link.getAttribute("data-page") === pageName) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
+
+        // Update top navbar title
+        const titles = {
+            dashboard: "Executive Manufacturing Quality Dashboard",
+            products: "Finished Goods & Product Master Catalog",
+            bom: "Bill of Materials (BOM) Architecture",
+            suppliers: "Vendor Pedigree & Supplier Network",
+            lots: "Material Lot Pedigree & Traceability",
+            orders: "Shop Floor Production Orders & Consumptions",
+            machines: "Machine Cells & Work Centers",
+            steps: "Process Steps & Standard Operating Procedures",
+            inspections: "Quality Inspection Checkpoints",
+            defects: "Non-Conformance & Defect Management",
+            capa: "Corrective & Preventive Action (CAPA) Lifecycle",
+            traceability: "Multi-Tier Defect & Material Traceability",
+            reports: "Quality Analytics, Exports & Verification Audit"
+        };
+        const pageTitleEl = document.getElementById("current-page-title");
+        if (pageTitleEl) {
+            pageTitleEl.innerText = titles[pageName] || "Manufacturing Quality System";
+        }
+
+        // Render target page
+        switch (pageName) {
+            case "dashboard":
+                DashboardModule.init();
+                break;
+            case "products":
+                Modules.renderProducts(1);
+                break;
+            case "bom":
+                Modules.renderBOM();
+                break;
+            case "suppliers":
+                Modules.renderSuppliers(1);
+                break;
+            case "lots":
+                Modules.renderLots(1);
+                break;
+            case "orders":
+                Modules.renderOrders(1);
+                break;
+            case "machines":
+                Modules.renderMachines();
+                break;
+            case "steps":
+                Modules.renderProcessSteps();
+                break;
+            case "inspections":
+                Modules.renderInspections(1);
+                break;
+            case "defects":
+                Modules.renderDefects(1);
+                break;
+            case "capa":
+                Modules.renderCAPA(1);
+                break;
+            case "traceability":
+                TraceabilityModule.init();
+                break;
+            case "reports":
+                Modules.renderReports();
+                break;
+            default:
+                DashboardModule.init();
+        }
+    }
+
+    async checkServerHealth() {
+        const badge = document.getElementById("server-status-pill");
+        if (!badge) return;
+
+        try {
+            const health = await ApiClient.checkHealth();
+            if (health.status === "healthy") {
+                badge.className = "nav-status-badge";
+                badge.innerHTML = `<span class="status-dot"></span> MySQL Connected (API 5000)`;
+            } else {
+                badge.className = "nav-status-badge text-warning bg-warning-subtle border-warning";
+                badge.innerHTML = `<span class="status-dot bg-warning"></span> Degraded (${health.database})`;
+            }
+        } catch (e) {
+            badge.className = "nav-status-badge text-danger bg-danger-subtle border-danger";
+            badge.innerHTML = `<span class="status-dot bg-danger"></span> API Disconnected`;
+        }
+    }
+
+    showToast(message, type = "info") {
+        const toastContainer = document.getElementById("toast-container");
+        if (!toastContainer) return;
+
+        const id = "toast-" + Date.now();
+        const icon = type === "success" ? "fa-circle-check text-success" :
+                     type === "danger" ? "fa-circle-xmark text-danger" :
+                     type === "warning" ? "fa-triangle-exclamation text-warning" : "fa-circle-info text-primary";
+
+        const toastHtml = `
+            <div id="${id}" class="toast align-items-center text-bg-white border-0 shadow-lg mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body d-flex align-items-center gap-2">
+                        <i class="fa-solid ${icon} fs-5"></i>
+                        <span>${message}</span>
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        `;
+        toastContainer.insertAdjacentHTML("beforeend", toastHtml);
+        const toastEl = document.getElementById(id);
+        const toast = new bootstrap.Toast(toastEl, { delay: 4000 });
+        toast.show();
+        toastEl.addEventListener("hidden.bs.toast", () => toastEl.remove());
+    }
+}
+
+// Global app instance
+let app;
+document.addEventListener("DOMContentLoaded", () => {
+    app = new App();
+});
