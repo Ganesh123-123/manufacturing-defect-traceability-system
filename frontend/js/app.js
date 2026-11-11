@@ -20,15 +20,17 @@ class App {
     }
 
     setupTheme() {
-        const savedTheme = localStorage.getItem("mfg-theme") || "light";
+        const savedTheme = localStorage.getItem("mfg-theme") || "dark";
         document.documentElement.setAttribute("data-theme", savedTheme);
+        document.documentElement.setAttribute("data-bs-theme", "dark");
         this.updateThemeButton(savedTheme);
 
         const themeToggle = document.getElementById("theme-toggle");
         themeToggle?.addEventListener("click", () => {
-            const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
-            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+            const newTheme = currentTheme === "dark" ? "deep-dark" : "dark";
             document.documentElement.setAttribute("data-theme", newTheme);
+            document.documentElement.setAttribute("data-bs-theme", "dark");
             localStorage.setItem("mfg-theme", newTheme);
             this.updateThemeButton(newTheme);
         });
@@ -37,11 +39,11 @@ class App {
     updateThemeButton(theme) {
         const themeToggle = document.getElementById("theme-toggle");
         if (!themeToggle) return;
-        if (theme === "dark") {
-            themeToggle.innerHTML = '<i class="fa-solid fa-sun text-warning me-1"></i> <span>Light Mode</span>';
+        if (theme === "deep-dark") {
+            themeToggle.innerHTML = '<i class="fa-solid fa-bolt text-cyan me-1"></i> <span>Obsidian Dark</span>';
             themeToggle.classList.add("active");
         } else {
-            themeToggle.innerHTML = '<i class="fa-solid fa-moon me-1"></i> <span>Dark Mode</span>';
+            themeToggle.innerHTML = '<i class="fa-solid fa-moon text-primary me-1"></i> <span>Cyber Dark</span>';
             themeToggle.classList.remove("active");
         }
     }

@@ -137,6 +137,21 @@ class DashboardModule {
             </div>
         `;
 
+        if (window.Chart) {
+            Chart.defaults.color = "#94a3b8";
+            Chart.defaults.borderColor = "rgba(71, 85, 105, 0.22)";
+            if (Chart.defaults.plugins?.legend?.labels) {
+                Chart.defaults.plugins.legend.labels.color = "#cbd5e1";
+            }
+            if (Chart.defaults.plugins?.tooltip) {
+                Chart.defaults.plugins.tooltip.backgroundColor = "rgba(10, 15, 29, 0.95)";
+                Chart.defaults.plugins.tooltip.borderColor = "rgba(56, 189, 248, 0.4)";
+                Chart.defaults.plugins.tooltip.borderWidth = 1;
+                Chart.defaults.plugins.tooltip.titleColor = "#ffffff";
+                Chart.defaults.plugins.tooltip.bodyColor = "#cbd5e1";
+            }
+        }
+
         await this.loadKPIs();
         await this.loadAllCharts();
     }
@@ -370,7 +385,7 @@ class DashboardModule {
                         tooltip: { mode: "index", intersect: false }
                     },
                     scales: {
-                        y: { beginAtZero: true, grid: { color: "#f1f5f9" } },
+                        y: { beginAtZero: true, grid: { color: "rgba(71, 85, 105, 0.2)" } },
                         x: { grid: { display: false } }
                     }
                 }
@@ -408,7 +423,7 @@ class DashboardModule {
                         backgroundColor: ["#f59e0b", "#ef4444"],
                         hoverBackgroundColor: ["#d97706", "#dc2626"],
                         borderWidth: 2,
-                        borderColor: "#ffffff"
+                        borderColor: "rgba(10, 15, 29, 0.95)"
                     }]
                 },
                 options: {
@@ -506,7 +521,7 @@ class DashboardModule {
                         }
                     },
                     scales: {
-                        y: { beginAtZero: true, grid: { color: "#f8fafc" } },
+                        y: { beginAtZero: true, grid: { color: "rgba(71, 85, 105, 0.2)" } },
                         x: { grid: { display: false }, ticks: { maxRotation: 30, font: { size: 10 } } }
                     }
                 }
@@ -565,7 +580,7 @@ class DashboardModule {
                     },
                     scales: {
                         x: { stacked: true, grid: { display: false }, ticks: { maxRotation: 35, font: { size: 10 } } },
-                        y: { stacked: true, beginAtZero: true, grid: { color: "#f8fafc" } }
+                        y: { stacked: true, beginAtZero: true, grid: { color: "rgba(71, 85, 105, 0.2)" } }
                     }
                 }
             });
@@ -627,7 +642,7 @@ class DashboardModule {
                         y: {
                             beginAtZero: true,
                             ticks: { callback: v => v + "%" },
-                            grid: { color: "#f8fafc" }
+                            grid: { color: "rgba(71, 85, 105, 0.2)" }
                         },
                         x: { grid: { display: false }, ticks: { font: { size: 10 } } }
                     }
@@ -666,7 +681,7 @@ class DashboardModule {
                         backgroundColor: ["#10b981", "#ef4444"],
                         hoverBackgroundColor: ["#059669", "#dc2626"],
                         borderWidth: 2,
-                        borderColor: "#ffffff"
+                        borderColor: "rgba(10, 15, 29, 0.95)"
                     }]
                 },
                 options: {
@@ -739,7 +754,7 @@ class DashboardModule {
                             "#64748b"  // CLOSED
                         ],
                         borderWidth: 2,
-                        borderColor: "#ffffff"
+                        borderColor: "rgba(10, 15, 29, 0.95)"
                     }]
                 },
                 options: {
