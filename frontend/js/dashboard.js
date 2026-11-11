@@ -207,7 +207,7 @@ class DashboardModule {
                             <p class="kpi-value">${Number(kpis.total_products || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Active SKUs</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-blue"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-boxes-stacked"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6">
@@ -217,7 +217,7 @@ class DashboardModule {
                             <p class="kpi-value">${Number(kpis.total_suppliers || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Approved Vendors</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-cyan"><i class="fa-solid fa-truck"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-truck"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6">
@@ -227,7 +227,7 @@ class DashboardModule {
                             <p class="kpi-value">${Number(kpis.total_material_lots || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Pedigree Batches</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-purple"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6">
@@ -237,7 +237,7 @@ class DashboardModule {
                             <p class="kpi-value">${Number(kpis.total_production_orders || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Shop Floor Batches</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-blue"><i class="fa-solid fa-industry"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-industry"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6">
@@ -247,57 +247,57 @@ class DashboardModule {
                             <p class="kpi-value">${Number(kpis.total_inspections || 0).toLocaleString()}</p>
                             <span class="kpi-sub">${Number(kpis.total_inspected_units || 0).toLocaleString()} units</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-green"><i class="fa-solid fa-clipboard-check"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-clipboard-check"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6">
                     <div class="kpi-card">
                         <div class="kpi-info">
                             <h6>Total Defects</h6>
-                            <p class="kpi-value text-danger">${Number(kpis.total_defects || 0).toLocaleString()}</p>
+                            <p class="kpi-value">${Number(kpis.total_defects || 0).toLocaleString()}</p>
                             <span class="kpi-sub">${Number(kpis.total_defective_units || 0).toLocaleString()} units</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-triangle-exclamation"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="kpi-card">
                         <div class="kpi-info">
                             <h6>Defect Rate</h6>
-                            <p class="kpi-value ${kpis.defect_rate > 5 ? 'text-danger' : 'text-primary'}">${kpis.defect_rate}%</p>
+                            <p class="kpi-value">${kpis.defect_rate}%</p>
                             <span class="kpi-sub">Defective / Inspected Units</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-amber"><i class="fa-solid fa-percent"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-percent"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="kpi-card">
                         <div class="kpi-info">
                             <h6>Rework Quantity</h6>
-                            <p class="kpi-value text-warning">${Number(kpis.rework_quantity || 0).toLocaleString()}</p>
+                            <p class="kpi-value">${Number(kpis.rework_quantity || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Salvageable units</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-amber"><i class="fa-solid fa-wrench"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-wrench"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="kpi-card">
                         <div class="kpi-info">
                             <h6>Scrap Quantity</h6>
-                            <p class="kpi-value text-danger">${Number(kpis.scrap_quantity || 0).toLocaleString()}</p>
+                            <p class="kpi-value">${Number(kpis.scrap_quantity || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Disposed scrap units</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-red"><i class="fa-solid fa-trash-can"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-trash-can"></i></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="kpi-card">
                         <div class="kpi-info">
                             <h6>Open CAPAs</h6>
-                            <p class="kpi-value text-purple">${Number(kpis.open_corrective_actions || 0).toLocaleString()}</p>
+                            <p class="kpi-value">${Number(kpis.open_corrective_actions || 0).toLocaleString()}</p>
                             <span class="kpi-sub">Active investigations</span>
                         </div>
-                        <div class="kpi-icon-wrap kpi-purple"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
                     </div>
                 </div>
             `;
