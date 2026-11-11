@@ -175,7 +175,7 @@ class App {
             const health = await ApiClient.checkHealth();
             if (health.status === "healthy") {
                 badge.className = "nav-status-badge";
-                badge.innerHTML = `<span class="status-dot"></span> MySQL Connected (API 5000)`;
+                badge.innerHTML = `<span class="status-dot"></span> Database Connected (${health.engine})`;
             } else {
                 badge.className = "nav-status-badge text-warning bg-warning-subtle border-warning";
                 badge.innerHTML = `<span class="status-dot bg-warning"></span> Degraded (${health.database})`;
