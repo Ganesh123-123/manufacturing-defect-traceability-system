@@ -1,7 +1,9 @@
 /**
  * Centralized API Client for Manufacturing Defect Traceability System
  */
-const API_BASE_URL = `${window.location.origin}/api`;
+const API_BASE_URL = (window.location.port === '5000')
+    ? `${window.location.origin}/api`
+    : 'http://127.0.0.1:5000/api';
 
 class ApiClient {
     static async request(endpoint, options = {}) {
