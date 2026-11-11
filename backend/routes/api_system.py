@@ -25,11 +25,12 @@ def health():
 @bp.route("/validation-report", methods=["GET"])
 def validate_system():
     summary = run_full_database_validation(db.session)
-    export_dir = current_app.config.get("EXPORT_DIR", "backend/exports")
-    os.makedirs(export_dir, exist_ok=True)
-    summary_path = os.path.join(export_dir, "validation_summary.json")
-    with open(summary_path, "w") as f:
-        json.dump(summary, f, indent=2)
+    if not current_app.config.get("TESTING"):
+        export_dir = current_app.config.get("EXPORT_DIR", "backend/exports")
+        os.makedirs(export_dir, exist_ok=True)
+        summary_path = os.path.join(export_dir, "validation_summary.json")
+        with open(summary_path, "w") as f:
+            json.dump(summary, f, indent=2)
     return jsonify(summary), 200
 
 @bp.route("/anomaly-scenarios", methods=["GET"])
