@@ -22,6 +22,7 @@ def health():
 
 @bp.route("/validate", methods=["GET", "POST"])
 @bp.route("/audit-summary", methods=["GET"])
+@bp.route("/validation-report", methods=["GET"])
 def validate_system():
     summary = run_full_database_validation(db.session)
     export_dir = current_app.config.get("EXPORT_DIR", "backend/exports")
@@ -77,6 +78,7 @@ def get_ground_truth():
     return jsonify([]), 200
 
 @bp.route("/reproducibility", methods=["GET"])
+@bp.route("/reproducibility-report", methods=["GET"])
 def get_reproducibility():
     export_dir = current_app.config.get("EXPORT_DIR", "backend/exports")
     rep_file = os.path.join(export_dir, "reproducibility_report.json")

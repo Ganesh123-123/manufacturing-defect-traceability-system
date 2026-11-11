@@ -17,12 +17,14 @@ def get_supplier_analysis():
 
 @bp.route("/machines", methods=["GET"])
 @bp.route("/machine-defect-scrap", methods=["GET"])
+@bp.route("/machine-defects", methods=["GET"])
 def get_machine_analysis():
     data = AnalyticsService.get_machine_defect_analysis()
     return jsonify(data), 200
 
 @bp.route("/products", methods=["GET"])
 @bp.route("/product-defect-rates", methods=["GET"])
+@bp.route("/highest-defect-products", methods=["GET"])
 def get_product_analysis():
     data = AnalyticsService.get_product_defect_rates()
     return jsonify(data), 200

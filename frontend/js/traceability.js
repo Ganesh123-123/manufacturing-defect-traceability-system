@@ -356,7 +356,7 @@ class TraceabilityModule {
                     <span class="badge badge-soft-primary">${data.query_id}</span>
                 </div>
                 <div class="card-body">
-                    <pre class="bg-light p-3 rounded text-dark" style="max-height: 500px; overflow-y: auto;">${JSON.stringify(data, null, 2)}</pre>
+                    <pre class="code-preview p-3 rounded text-light" style="max-height: 500px; overflow-y: auto;">${JSON.stringify(data, null, 2)}</pre>
                 </div>
             </div>
         `;

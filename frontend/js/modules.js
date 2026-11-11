@@ -696,15 +696,15 @@ class Modules {
                         <div class="row g-3">
                             ${machines.map(m => `
                                 <div class="col-md-4 col-sm-6">
-                                    <div class="p-3 border rounded bg-white shadow-sm h-100">
+                                    <div class="machine-card p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="badge badge-soft-dark"><strong>${m.machine_code}</strong></span>
+                                            <span class="badge badge-soft-primary"><strong>${m.machine_code}</strong></span>
                                             <span class="badge ${m.status === 'OPERATIONAL' ? 'badge-soft-success' : 'badge-soft-warning'}">${m.status}</span>
                                         </div>
-                                        <h6 class="fw-bold text-dark mb-1">${m.name}</h6>
+                                        <h6 class="fw-bold mb-1 text-main">${m.name}</h6>
                                         <p class="text-muted small mb-2"><i class="fa-solid fa-industry me-1"></i>${m.line} &bull; ${m.location}</p>
-                                        <div class="small text-secondary mb-3"><strong>Type:</strong> ${m.type}</div>
-                                        <button class="btn btn-sm btn-outline-primary w-100" onclick="app.navigate('traceability', { type: 'machine', id: '${m.id}' });">Trace Machine History</button>
+                                        <div class="small text-secondary mb-3"><strong>Type:</strong> <span class="text-cyan">${m.type}</span></div>
+                                        <button class="btn btn-sm btn-outline-primary w-100" onclick="app.navigate('traceability', { type: 'machine', id: '${m.id}' });"><i class="fa-solid fa-route me-1"></i>Trace Machine History</button>
                                     </div>
                                 </div>
                             `).join("")}
@@ -1382,9 +1382,9 @@ class Modules {
                                 <p class="text-muted small">Injected anomaly test scenarios and ground truth labels.</p>
                                 <div style="max-height: 240px; overflow-y: auto;">
                                     ${gtRes.map(g => `
-                                        <div class="border rounded p-2 mb-2 bg-light small">
-                                            <div class="d-flex justify-content-between">
-                                                <strong>${g.anomaly_id}: ${g.issue_type}</strong>
+                                        <div class="stat-glass-chip p-2 mb-2 small">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <strong class="text-main">${g.anomaly_id}: ${g.issue_type}</strong>
                                                 <span class="badge ${g.severity === 'CRITICAL' ? 'badge-soft-danger' : 'badge-soft-warning'}">${g.severity}</span>
                                             </div>
                                             <div class="text-secondary mt-1">${g.affected_entity} <code>${g.affected_record_id}</code></div>
@@ -1425,26 +1425,26 @@ class Modules {
                     <div class="card-body">
                         <div class="row g-3 mb-3 text-center">
                             <div class="col-md-3">
-                                <div class="p-2 border rounded bg-light">
-                                    <div class="text-muted small">TOTAL AUDITED RECORDS</div>
-                                    <h4 class="fw-bold mb-0">${valRes.total_records.toLocaleString()}</h4>
+                                <div class="stat-glass-chip p-3">
+                                    <div class="text-muted small fw-bold">TOTAL AUDITED RECORDS</div>
+                                    <h4 class="fw-bold mb-0 text-cyan">${valRes.total_records.toLocaleString()}</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="p-2 border rounded bg-light">
-                                    <div class="text-muted small">TOTAL INTEGRITY CHECKS</div>
-                                    <h4 class="fw-bold mb-0">${valRes.total_checks.toLocaleString()}</h4>
+                                <div class="stat-glass-chip p-3">
+                                    <div class="text-muted small fw-bold">TOTAL INTEGRITY CHECKS</div>
+                                    <h4 class="fw-bold mb-0 text-purple">${valRes.total_checks.toLocaleString()}</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="p-2 border rounded bg-light">
-                                    <div class="text-muted small">CHECKS PASSED</div>
+                                <div class="stat-glass-chip p-3">
+                                    <div class="text-muted small fw-bold">CHECKS PASSED</div>
                                     <h4 class="fw-bold text-success mb-0">${valRes.passed_checks.toLocaleString()}</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="p-2 border rounded bg-light">
-                                    <div class="text-muted small">DETECTED ANOMALIES</div>
+                                <div class="stat-glass-chip p-3">
+                                    <div class="text-muted small fw-bold">DETECTED ANOMALIES</div>
                                     <h4 class="fw-bold text-danger mb-0">${valRes.failed_checks}</h4>
                                 </div>
                             </div>

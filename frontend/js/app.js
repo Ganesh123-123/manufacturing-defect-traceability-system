@@ -194,13 +194,13 @@ class App {
                      type === "warning" ? "fa-triangle-exclamation text-warning" : "fa-circle-info text-primary";
 
         const toastHtml = `
-            <div id="${id}" class="toast align-items-center text-bg-white border-0 shadow-lg mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+            <div id="${id}" class="toast toast-glass align-items-center border-0 shadow-lg mb-2" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body d-flex align-items-center gap-2">
                         <i class="fa-solid ${icon} fs-5"></i>
-                        <span>${message}</span>
+                        <span class="text-main">${message}</span>
                     </div>
-                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
                 </div>
             </div>
         `;
