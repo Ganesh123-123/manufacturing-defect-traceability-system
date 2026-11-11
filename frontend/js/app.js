@@ -8,6 +8,7 @@ class App {
     }
 
     async init() {
+        this.setupTheme();
         this.setupNavigation();
         this.checkServerHealth();
         // Periodically poll server health
@@ -16,6 +17,33 @@ class App {
         // Check hash or default to dashboard
         const hash = window.location.hash.replace("#", "") || "dashboard";
         this.navigate(hash);
+    }
+
+    setupTheme() {
+        const savedTheme = localStorage.getItem("mfg-theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+        this.updateThemeButton(savedTheme);
+
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle?.addEventListener("click", () => {
+            const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("mfg-theme", newTheme);
+            this.updateThemeButton(newTheme);
+        });
+    }
+
+    updateThemeButton(theme) {
+        const themeToggle = document.getElementById("theme-toggle");
+        if (!themeToggle) return;
+        if (theme === "dark") {
+            themeToggle.innerHTML = '<i class="fa-solid fa-sun text-warning me-1"></i> <span>Light Mode</span>';
+            themeToggle.classList.add("active");
+        } else {
+            themeToggle.innerHTML = '<i class="fa-solid fa-moon me-1"></i> <span>Dark Mode</span>';
+            themeToggle.classList.remove("active");
+        }
     }
 
     setupNavigation() {
