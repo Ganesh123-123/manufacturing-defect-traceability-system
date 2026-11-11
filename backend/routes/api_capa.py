@@ -53,3 +53,4 @@ def close_capa(capa_id):
         }), 400
     except ValidationError as e:
         return jsonify({"error": e.message, "code": e.code}), 400
+

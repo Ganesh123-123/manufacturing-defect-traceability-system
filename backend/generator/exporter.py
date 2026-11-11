@@ -319,3 +319,4 @@ CREATE TABLE IF NOT EXISTS corrective_actions (
 """
         with open(os.path.join(export_dir, "schema.sql"), "w", encoding="utf-8") as f:
             f.write(schema_sql)
+

@@ -80,3 +80,4 @@ def test_bom_creation_and_validation(client):
         "quantity_per_unit": 5.0
     })
     assert fail_res.status_code == 400
+

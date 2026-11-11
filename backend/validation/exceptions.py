@@ -29,3 +29,4 @@ class TraceabilityBrokenException(ValidationError):
     """Exception raised when an upstream or downstream traceability link is missing."""
     def __init__(self, message, details=None):
         super().__init__(message, code="TRACEABILITY_BROKEN", details=details)
+

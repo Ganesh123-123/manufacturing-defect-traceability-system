@@ -24,3 +24,4 @@ def trace_defect(defect_id):
         return jsonify(chain), 200
     except ValidationError as e:
         return jsonify({"error": e.message, "code": e.code, "status": "BROKEN_OR_NOT_FOUND"}), 404
+

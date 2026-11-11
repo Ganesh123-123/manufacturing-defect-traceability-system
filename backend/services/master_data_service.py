@@ -179,3 +179,4 @@ class MasterDataService:
             )
             session.add(s)
             return s.to_dict()
+

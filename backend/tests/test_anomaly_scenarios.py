@@ -135,3 +135,4 @@ def test_anomaly_scenario_5_broken_traceability_chain(db_session):
     summary = run_full_database_validation(db_session)
     anom_ids = [a.get("anomaly_id") for a in summary["detected_anomalies"]]
     assert "SCENARIO_5" in anom_ids
+

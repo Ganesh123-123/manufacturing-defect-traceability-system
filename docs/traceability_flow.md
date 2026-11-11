@@ -41,3 +41,4 @@ Starting from a quarantined supplier (`SUP-XXXXXX`) or compromised raw material 
 | **Scenario 5** | Defect points to non-existent work order (`WO-2026-999999`) | Upstream graph traversal integrity checker | `TRACEABILITY_CHAIN_BROKEN` |
 
 Ground-truth anomaly labels are preserved separately in `backend/exports/ground_truth.json` and `backend/exports/ground_truth.csv` without leaking into application decision logic.
+

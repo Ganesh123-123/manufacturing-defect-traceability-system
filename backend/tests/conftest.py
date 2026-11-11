@@ -34,3 +34,4 @@ def db_session(app):
         yield db.session
         db.session.remove()
         db.drop_all()
+

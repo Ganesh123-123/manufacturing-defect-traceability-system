@@ -42,3 +42,4 @@ def create_containment(defect_id):
         return jsonify(ca), 201
     except ValidationError as e:
         return jsonify({"error": e.message, "code": e.code}), 400
+

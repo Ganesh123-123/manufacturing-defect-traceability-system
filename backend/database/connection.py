@@ -26,3 +26,4 @@ def get_session():
         session.rollback()
         logger.error(f"Transaction rolled back due to error: {e}")
         raise
+

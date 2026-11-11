@@ -83,3 +83,4 @@ def test_capa_verification_and_closure_workflow(client):
     })
     assert close_res.status_code == 200
     assert close_res.get_json()["status"] == "CLOSED"
+

@@ -226,3 +226,4 @@ class ProductionService:
                     pom.consumed_quantity += consumed_qty
 
             return consumption.to_dict()
+

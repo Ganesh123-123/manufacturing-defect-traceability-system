@@ -66,3 +66,4 @@ def record_material_consumption():
         return jsonify(cons), 201
     except (ValidationError, MaterialReconciliationException) as e:
         return jsonify({"error": e.message, "code": getattr(e, "code", "VALIDATION_ERROR")}), 400
+

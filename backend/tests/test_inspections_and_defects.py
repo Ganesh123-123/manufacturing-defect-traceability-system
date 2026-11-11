@@ -87,3 +87,4 @@ def test_inspection_and_defect_workflow(client):
     # Verify Lot status is set to QUARANTINED
     lot_check = client.get("/api/material-lots/LOT-SUP-000001-2026-000001")
     assert lot_check.get_json()["status"] == "QUARANTINED"
+

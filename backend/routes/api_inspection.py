@@ -45,3 +45,4 @@ def record_inspection():
         return jsonify(insp), 201
     except ValidationError as e:
         return jsonify({"error": e.message, "code": e.code}), 400
+

@@ -593,3 +593,4 @@ class CorrectiveActionEvent(db.Model):
             "note": self.note,
             "timestamp": self.timestamp.isoformat() if self.timestamp else None
         }
+

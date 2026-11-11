@@ -172,3 +172,4 @@ class CAPAService:
                 session.add(def_event)
 
             return capa.to_dict()
+

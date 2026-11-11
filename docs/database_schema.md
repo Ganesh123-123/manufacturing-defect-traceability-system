@@ -71,3 +71,4 @@ erDiagram
 6. **Rule 9 (CAPA Verification Gate):** No Corrective Action can be closed without formal audit verification by authorized quality personnel.
 7. **Rule 10 & 11 (Defect Rate Metric):** Defect rate strictly uses inspected quantity as denominator:
    $$\text{Defect Rate} = \left(\frac{\text{Total Defective Units}}{\text{Total Inspected Units}}\right) \times 100$$
+

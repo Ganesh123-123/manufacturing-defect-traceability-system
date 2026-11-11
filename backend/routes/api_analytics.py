@@ -42,3 +42,4 @@ def get_pass_fail():
 def get_capa_distribution():
     data = AnalyticsService.get_capa_status_distribution()
     return jsonify(data), 200
+

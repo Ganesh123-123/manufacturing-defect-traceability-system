@@ -123,3 +123,4 @@ def test_traceability_by_other_entities(client):
     # Non-existent query should 404
     fail_res = client.get("/api/traceability?type=defect&id=DEF-NONEXISTENT")
     assert fail_res.status_code == 404
+

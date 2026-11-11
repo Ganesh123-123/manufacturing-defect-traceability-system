@@ -16,3 +16,4 @@ def register_blueprints(app):
     app.register_blueprint(traceability_bp)
     app.register_blueprint(analytics_bp)
     app.register_blueprint(system_bp)
+

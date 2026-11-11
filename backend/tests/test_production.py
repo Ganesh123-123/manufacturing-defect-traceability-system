@@ -75,3 +75,4 @@ def test_production_order_and_consumption(client):
         "consumed_quantity": 1500.0
     })
     assert over_res.status_code == 400
+

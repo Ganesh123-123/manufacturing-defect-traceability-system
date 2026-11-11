@@ -52,3 +52,4 @@ jobs:
           MYSQL_DB: defect_traceability
         run: |
           python -m generator.generate_data --scale starter
+

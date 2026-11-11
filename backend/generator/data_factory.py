@@ -568,3 +568,4 @@ class DataFactory:
             "defect_events": defect_events,
             "capa_events": capa_events
         }
+

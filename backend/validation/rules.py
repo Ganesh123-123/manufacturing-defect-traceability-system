@@ -248,3 +248,4 @@ def run_full_database_validation(db_session):
         "detected_anomalies": detected_anomalies
     }
     return summary
+

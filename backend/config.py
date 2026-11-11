@@ -30,3 +30,4 @@ class TestConfig(Config):
     # Test can use in-memory SQLite or dedicated test DB
     SQLALCHEMY_DATABASE_URI = os.environ.get("TEST_DATABASE_URL", "sqlite:///:memory:")
     SQLALCHEMY_ENGINE_OPTIONS = {}
+

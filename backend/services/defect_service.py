@@ -152,3 +152,4 @@ class DefectService:
 
             session.flush()
             return ca.to_dict()
+
