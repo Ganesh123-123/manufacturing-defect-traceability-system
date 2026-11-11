@@ -38,11 +38,11 @@ class AnalyticsService:
             "total_production_orders": total_production_orders,
             "total_inspections": total_inspections,
             "total_defects": total_defects,
-            "total_inspected_units": inspected_units,
-            "total_defective_units": defective_units,
+            "total_inspected_units": int(inspected_units),
+            "total_defective_units": int(defective_units),
             "defect_rate": round(defect_rate, 2),
-            "rework_quantity": rework_quantity,
-            "scrap_quantity": scrap_quantity,
+            "rework_quantity": int(rework_quantity),
+            "scrap_quantity": int(scrap_quantity),
             "open_corrective_actions": open_capas
         }
 
@@ -145,26 +145,30 @@ class AnalyticsService:
     def get_rework_vs_scrap():
         rework = db.session.query(func.coalesce(func.sum(Defect.rework_quantity), 0)).scalar() or 0
         scrap = db.session.query(func.coalesce(func.sum(Defect.scrap_quantity), 0)).scalar() or 0
-        total = rework + scrap
+        rework_int = int(rework)
+        scrap_int = int(scrap)
+        total = rework_int + scrap_int
         return {
-            "rework": int(rework),
-            "scrap": int(scrap),
-            "total": int(total),
-            "rework_percentage": round((rework / total * 100.0), 1) if total > 0 else 0,
-            "scrap_percentage": round((scrap / total * 100.0), 1) if total > 0 else 0
+            "rework": rework_int,
+            "scrap": scrap_int,
+            "total": total,
+            "rework_percentage": round((float(rework_int) / float(total) * 100.0), 1) if total > 0 else 0.0,
+            "scrap_percentage": round((float(scrap_int) / float(total) * 100.0), 1) if total > 0 else 0.0
         }
 
     @staticmethod
     def get_inspection_pass_fail():
         passed = db.session.query(func.coalesce(func.sum(InspectionResult.passed_quantity), 0)).scalar() or 0
         failed = db.session.query(func.coalesce(func.sum(InspectionResult.failed_quantity), 0)).scalar() or 0
-        total = passed + failed
+        passed_int = int(passed)
+        failed_int = int(failed)
+        total = passed_int + failed_int
         return {
-            "passed_quantity": int(passed),
-            "failed_quantity": int(failed),
-            "total_inspected": int(total),
-            "pass_rate": round((passed / total * 100.0), 1) if total > 0 else 0,
-            "fail_rate": round((failed / total * 100.0), 1) if total > 0 else 0
+            "passed_quantity": passed_int,
+            "failed_quantity": failed_int,
+            "total_inspected": total,
+            "pass_rate": round((float(passed_int) / float(total) * 100.0), 1) if total > 0 else 0.0,
+            "fail_rate": round((float(failed_int) / float(total) * 100.0), 1) if total > 0 else 0.0
         }
 
     @staticmethod

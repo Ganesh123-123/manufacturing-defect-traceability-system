@@ -26,3 +26,4 @@ echo Frontend: http://localhost:8000
 echo Backend:  http://localhost:5000
 echo ==============================================================
 pause
+
