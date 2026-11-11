@@ -1,4 +1,4 @@
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.database.connection import db, get_session
 from backend.models import (
     InspectionPlan, InspectionResult, ProductionOrder, ProcessStep, Machine
@@ -58,7 +58,7 @@ class InspectionService:
 
     @staticmethod
     def get_inspection_result(insp_id):
-        insp = InspectionResult.query.get(insp_id)
+        insp = db.session.get(InspectionResult, insp_id)
         if not insp:
             raise ValidationError(f"Inspection Result {insp_id} not found", code="NOT_FOUND")
         res = insp.to_dict()
@@ -69,19 +69,19 @@ class InspectionService:
     def record_inspection_result(data):
         # Rule 5: Inspection results must reference valid inspection plans
         plan_id = data.get("inspection_plan_id")
-        plan = InspectionPlan.query.get(plan_id)
+        plan = db.session.get(InspectionPlan, plan_id)
         if not plan_id or not plan:
             raise ValidationError(f"Valid inspection_plan_id required. Plan {plan_id} not found.")
 
         order_id = data.get("production_order_id")
-        order = ProductionOrder.query.get(order_id)
+        order = db.session.get(ProductionOrder, order_id)
         if not order_id or not order:
             raise ValidationError(f"Valid production_order_id required. Order {order_id} not found.")
 
         insp_id = data.get("id")
         if not insp_id:
             raise ValidationError("Inspection id is required.")
-        if InspectionResult.query.get(insp_id):
+        if db.session.get(InspectionResult, insp_id):
             raise ValidationError(f"Inspection {insp_id} already exists.", code="DUPLICATE_KEY")
 
         inspected_qty = int(data.get("inspected_quantity", 0))
@@ -104,7 +104,7 @@ class InspectionService:
                 passed_quantity=passed_qty,
                 failed_quantity=failed_qty,
                 result=data.get("result", res_status),
-                inspected_at=datetime.utcnow(),
+                inspected_at=utcnow(),
                 inspector_name=data.get("inspector_name", "Quality Engineer"),
                 notes=data.get("notes")
             )
@@ -115,10 +115,9 @@ class InspectionService:
             order.scrapped_quantity += failed_qty
             if order.completed_quantity >= order.target_quantity:
                 order.status = "COMPLETED"
-                order.actual_end_date = datetime.utcnow()
+                order.actual_end_date = utcnow()
             elif order.status == "PLANNED":
                 order.status = "IN_PROGRESS"
-                order.actual_start_date = datetime.utcnow()
+                order.actual_start_date = utcnow()
 
             return insp.to_dict()
-

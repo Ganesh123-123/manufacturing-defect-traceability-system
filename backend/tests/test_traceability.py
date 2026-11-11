@@ -120,7 +120,16 @@ def test_traceability_by_other_entities(client):
     assert l_res.status_code == 200
     assert l_res.get_json()["lot"]["id"] == "LOT-SUP-000001-2026-000001"
 
+    # Trace machine inspection and defect history
+    m_res = client.get("/api/traceability?type=machine&id=MAC-001")
+    assert m_res.status_code == 200
+    machine_history = m_res.get_json()
+    assert machine_history["machine"]["id"] == "MAC-001"
+    assert machine_history["inspections_count"] == 1
+    assert machine_history["inspections"][0]["id"] == "INSP-WO-2026-000001-001"
+    assert machine_history["defects_count"] == 1
+    assert machine_history["defects"][0]["id"] == "DEF-2026-000001"
+
     # Non-existent query should 404
     fail_res = client.get("/api/traceability?type=defect&id=DEF-NONEXISTENT")
     assert fail_res.status_code == 404
-

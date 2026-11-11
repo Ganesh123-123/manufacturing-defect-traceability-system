@@ -1,4 +1,4 @@
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.database.connection import db, get_session
 from backend.models import (
     Defect, InspectionResult, ProductionOrder, MaterialLot,
@@ -37,7 +37,7 @@ class DefectService:
 
     @staticmethod
     def get_defect(defect_id):
-        defect = Defect.query.get(defect_id)
+        defect = db.session.get(Defect, defect_id)
         if not defect:
             raise ValidationError(f"Defect {defect_id} not found", code="NOT_FOUND")
         res = defect.to_dict()
@@ -50,14 +50,14 @@ class DefectService:
     def record_defect(data):
         # Rule 6: Defects must reference valid inspection results
         insp_id = data.get("inspection_result_id")
-        insp = InspectionResult.query.get(insp_id)
+        insp = db.session.get(InspectionResult, insp_id)
         if not insp_id or not insp:
             raise ValidationError(f"Valid inspection_result_id is required. Inspection {insp_id} not found.")
 
         defect_id = data.get("id")
         if not defect_id:
             raise ValidationError("Defect id is required.")
-        if Defect.query.get(defect_id):
+        if db.session.get(Defect, defect_id):
             raise ValidationError(f"Defect {defect_id} already exists.", code="DUPLICATE_KEY")
 
         defect_qty = int(data.get("defect_quantity", 1))
@@ -70,7 +70,7 @@ class DefectService:
 
         # Validate material lot if provided
         material_lot_id = data.get("material_lot_id")
-        if material_lot_id and not MaterialLot.query.get(material_lot_id):
+        if material_lot_id and not db.session.get(MaterialLot, material_lot_id):
             raise ValidationError(f"Material Lot {material_lot_id} does not exist.")
 
         with get_session() as session:
@@ -91,7 +91,7 @@ class DefectService:
                 root_cause_category=data.get("root_cause_category", "MATERIAL"),
                 description=data.get("description", "Quality defect identified during inspection."),
                 status="IDENTIFIED",
-                detected_at=datetime.utcnow()
+                detected_at=utcnow()
             )
             session.add(defect)
 
@@ -106,7 +106,7 @@ class DefectService:
             session.add(event)
 
             # Update Production Order rework/scrap if applicable
-            order = ProductionOrder.query.get(insp.production_order_id)
+            order = db.session.get(ProductionOrder, insp.production_order_id)
             if order:
                 order.rework_quantity += rework_qty
                 # scrap_quantity may already be updated by inspection or can reflect additional defect scrap
@@ -115,7 +115,7 @@ class DefectService:
 
     @staticmethod
     def create_containment_action(defect_id, data):
-        defect = Defect.query.get(defect_id)
+        defect = db.session.get(Defect, defect_id)
         if not defect:
             raise ValidationError(f"Defect {defect_id} not found.")
 
@@ -127,7 +127,7 @@ class DefectService:
                 target_lot_id=data.get("target_lot_id") or defect.material_lot_id,
                 quarantined_quantity=float(data.get("quarantined_quantity", 0.0)),
                 status="ACTIVE",
-                initiated_at=datetime.utcnow()
+                initiated_at=utcnow()
             )
             session.add(ca)
 
@@ -146,10 +146,9 @@ class DefectService:
 
             # If target lot specified, update lot status to QUARANTINED
             if ca.target_lot_id:
-                lot = MaterialLot.query.get(ca.target_lot_id)
+                lot = db.session.get(MaterialLot, ca.target_lot_id)
                 if lot:
                     lot.status = "QUARANTINED"
 
             session.flush()
             return ca.to_dict()
-

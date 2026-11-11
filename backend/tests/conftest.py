@@ -17,7 +17,10 @@ from backend.database.connection import db
 @pytest.fixture(scope="session")
 def app():
     app = create_app(TestConfig)
-    return app
+    yield app
+    with app.app_context():
+        db.session.remove()
+        db.engine.dispose()
 
 @pytest.fixture(scope="function")
 def client(app):
@@ -34,4 +37,3 @@ def db_session(app):
         yield db.session
         db.session.remove()
         db.drop_all()
-

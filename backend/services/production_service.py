@@ -1,4 +1,4 @@
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.database.connection import db, get_session
 from backend.models import (
     MaterialLot, ProductionOrder, Product, Supplier, BOM,
@@ -37,7 +37,7 @@ class ProductionService:
 
     @staticmethod
     def get_material_lot(lot_id):
-        lot = MaterialLot.query.get(lot_id)
+        lot = db.session.get(MaterialLot, lot_id)
         if not lot:
             raise ValidationError(f"Material Lot {lot_id} not found", code="NOT_FOUND")
         res = lot.to_dict()
@@ -50,14 +50,14 @@ class ProductionService:
     def create_material_lot(data):
         # Rule 2: Material lots must reference valid suppliers
         supplier_id = data.get("supplier_id")
-        if not supplier_id or not Supplier.query.get(supplier_id):
+        if not supplier_id or not db.session.get(Supplier, supplier_id):
             raise ValidationError(f"Valid supplier_id is required. Supplier {supplier_id} not found.")
 
         lot_id = data.get("id")
         if not lot_id or not data.get("material_sku") or not data.get("material_name"):
             raise ValidationError("id, material_sku, and material_name are required.")
         
-        if MaterialLot.query.get(lot_id):
+        if db.session.get(MaterialLot, lot_id):
             raise ValidationError(f"Material Lot {lot_id} already exists.", code="DUPLICATE_KEY")
 
         qty = float(data.get("initial_quantity", 1000.0))
@@ -74,7 +74,7 @@ class ProductionService:
                 initial_quantity=qty,
                 remaining_quantity=qty,
                 unit_of_measure=data.get("unit_of_measure", "PCS"),
-                received_date=datetime.utcnow(),
+                received_date=utcnow(),
                 certificate_of_analysis=data.get("certificate_of_analysis", "COA-VALIDATED"),
                 status=data.get("status", "RELEASED")
             )
@@ -107,7 +107,7 @@ class ProductionService:
 
     @staticmethod
     def get_production_order(order_id):
-        order = ProductionOrder.query.get(order_id)
+        order = db.session.get(ProductionOrder, order_id)
         if not order:
             raise ValidationError(f"Production Order {order_id} not found", code="NOT_FOUND")
         res = order.to_dict()
@@ -121,7 +121,7 @@ class ProductionService:
     def create_production_order(data):
         # Rule 1: Production orders must reference valid products
         product_id = data.get("product_id")
-        product = Product.query.get(product_id)
+        product = db.session.get(Product, product_id)
         if not product_id or not product:
             raise ValidationError(f"Valid product_id is required. Product {product_id} not found.")
 
@@ -129,7 +129,7 @@ class ProductionService:
         if not order_id:
             raise ValidationError("Production order id is required.")
         
-        if ProductionOrder.query.get(order_id):
+        if db.session.get(ProductionOrder, order_id):
             raise ValidationError(f"Production Order {order_id} already exists.", code="DUPLICATE_KEY")
 
         target_qty = int(data.get("target_quantity", 100))
@@ -146,7 +146,7 @@ class ProductionService:
                 rework_quantity=0,
                 status=data.get("status", "PLANNED"),
                 batch_number=data.get("batch_number", f"BATCH-{order_id}"),
-                planned_start_date=datetime.utcnow()
+                planned_start_date=utcnow()
             )
             session.add(order)
 
@@ -183,11 +183,11 @@ class ProductionService:
         lot_id = data.get("material_lot_id")
         consumed_qty = float(data.get("consumed_quantity", 0.0))
 
-        order = ProductionOrder.query.get(order_id)
+        order = db.session.get(ProductionOrder, order_id)
         if not order:
             raise ValidationError(f"Production order {order_id} not found.")
 
-        lot = MaterialLot.query.get(lot_id)
+        lot = db.session.get(MaterialLot, lot_id)
         if not lot:
             raise ValidationError(f"Material lot {lot_id} not found.")
 
@@ -208,7 +208,7 @@ class ProductionService:
                 bom_id=bom_id,
                 consumed_quantity=consumed_qty,
                 unit_of_measure=data.get("unit_of_measure", lot.unit_of_measure),
-                consumed_at=datetime.utcnow()
+                consumed_at=utcnow()
             )
             session.add(consumption)
 
@@ -226,4 +226,3 @@ class ProductionService:
                     pom.consumed_quantity += consumed_qty
 
             return consumption.to_dict()
-

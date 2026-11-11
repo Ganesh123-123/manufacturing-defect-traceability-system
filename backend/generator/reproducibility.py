@@ -1,6 +1,6 @@
 import hashlib
 import json
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.generator.data_factory import DataFactory
 
 class ReproducibilityVerifier:
@@ -20,7 +20,7 @@ class ReproducibilityVerifier:
         data_2 = factory_2.generate_all(scale=scale)
 
         report = {
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": utcnow().isoformat(),
             "fixed_seed": seed,
             "scale": scale,
             "is_reproducible": True,
@@ -75,4 +75,3 @@ class ReproducibilityVerifier:
             }
 
         return report
-

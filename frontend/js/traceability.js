@@ -55,6 +55,7 @@ class TraceabilityModule {
             }
         });
 
+        document.getElementById("trace-type-select").value = defaultType;
         if (defaultId) {
             this.executeTrace(defaultType, defaultId);
         }
@@ -286,6 +287,68 @@ class TraceabilityModule {
     }
 
     static renderEntityOverview(container, type, data) {
+        if (type === "machine") {
+            const machine = data.machine;
+            const inspections = data.inspections || [];
+            const defects = data.defects || [];
+            container.innerHTML = `
+                <div class="card-enterprise mb-4">
+                    <div class="card-header">
+                        <h6 class="card-title"><i class="fa-solid fa-gears me-2 text-primary"></i>Machine History: ${machine.name}</h6>
+                        <span class="badge badge-soft-primary">${machine.id}</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-3"><strong>Line:</strong> ${machine.line}</div>
+                            <div class="col-md-3"><strong>Location:</strong> ${machine.location || "N/A"}</div>
+                            <div class="col-md-3"><strong>Status:</strong> ${machine.status}</div>
+                            <div class="col-md-3"><strong>Inspections:</strong> ${data.inspections_count}</div>
+                        </div>
+                        <h6 class="fw-bold">Recent Inspection History (${inspections.length} of ${data.inspections_count})</h6>
+                        ${inspections.length ? `
+                            <div class="table-responsive mb-4">
+                                <table class="table table-enterprise table-sm">
+                                    <thead><tr><th>Date</th><th>Inspection</th><th>Work Order</th><th>Process Step</th><th>Result</th><th>Inspected</th><th>Passed</th><th>Failed</th></tr></thead>
+                                    <tbody>${inspections.map(item => `
+                                        <tr>
+                                            <td>${item.inspected_at ? new Date(item.inspected_at).toLocaleString() : "N/A"}</td>
+                                            <td>${item.id}</td>
+                                            <td>${item.production_order_id}</td>
+                                            <td>${item.step_name || item.step_id || "N/A"}</td>
+                                            <td>${item.result}</td>
+                                            <td>${item.inspected_quantity}</td>
+                                            <td>${item.passed_quantity}</td>
+                                            <td>${item.failed_quantity}</td>
+                                        </tr>
+                                    `).join("")}</tbody>
+                                </table>
+                            </div>
+                        ` : `<p class="text-muted">No inspections recorded for this machine.</p>`}
+                        <h6 class="fw-bold">Recent Defect History (${defects.length} of ${data.defects_count})</h6>
+                        ${defects.length ? `
+                            <div class="table-responsive">
+                                <table class="table table-enterprise table-sm">
+                                    <thead><tr><th>Date</th><th>Defect</th><th>Type</th><th>Work Order</th><th>Severity</th><th>Quantity</th><th>Status</th></tr></thead>
+                                    <tbody>${defects.map(item => `
+                                        <tr>
+                                            <td>${item.detected_at ? new Date(item.detected_at).toLocaleString() : "N/A"}</td>
+                                            <td>${item.id}</td>
+                                            <td>${item.defect_type}</td>
+                                            <td>${item.production_order_id}</td>
+                                            <td>${item.severity}</td>
+                                            <td>${item.defect_quantity}</td>
+                                            <td>${item.status}</td>
+                                        </tr>
+                                    `).join("")}</tbody>
+                                </table>
+                            </div>
+                        ` : `<p class="text-muted">No defects recorded for this machine.</p>`}
+                    </div>
+                </div>
+            `;
+            return;
+        }
+
         container.innerHTML = `
             <div class="card-enterprise">
                 <div class="card-header">
@@ -299,4 +362,3 @@ class TraceabilityModule {
         `;
     }
 }
-

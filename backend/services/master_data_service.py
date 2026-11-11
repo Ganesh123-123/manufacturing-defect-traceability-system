@@ -1,4 +1,4 @@
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.database.connection import db, get_session
 from backend.models import Product, Supplier, BOM, Machine, ProcessStep, ProcessStepMachine
 from backend.validation.exceptions import ValidationError
@@ -24,7 +24,7 @@ class MasterDataService:
 
     @staticmethod
     def get_product(product_id):
-        product = Product.query.get(product_id)
+        product = db.session.get(Product, product_id)
         if not product:
             raise ValidationError(f"Product {product_id} not found", code="NOT_FOUND")
         res = product.to_dict()
@@ -36,7 +36,7 @@ class MasterDataService:
     def create_product(data):
         if not data.get("id") or not data.get("name"):
             raise ValidationError("Product id and name are required.")
-        if Product.query.get(data["id"]):
+        if db.session.get(Product, data["id"]):
             raise ValidationError(f"Product {data['id']} already exists.", code="DUPLICATE_KEY")
         
         with get_session() as session:
@@ -72,7 +72,7 @@ class MasterDataService:
 
     @staticmethod
     def get_supplier(supplier_id):
-        supplier = Supplier.query.get(supplier_id)
+        supplier = db.session.get(Supplier, supplier_id)
         if not supplier:
             raise ValidationError(f"Supplier {supplier_id} not found", code="NOT_FOUND")
         res = supplier.to_dict()
@@ -83,7 +83,7 @@ class MasterDataService:
     def create_supplier(data):
         if not data.get("id") or not data.get("name") or not data.get("code"):
             raise ValidationError("Supplier id, name, and code are required.")
-        if Supplier.query.get(data["id"]):
+        if db.session.get(Supplier, data["id"]):
             raise ValidationError(f"Supplier {data['id']} already exists.", code="DUPLICATE_KEY")
         if Supplier.query.filter_by(code=data["code"]).first():
             raise ValidationError(f"Supplier code {data['code']} already in use.", code="DUPLICATE_KEY")
@@ -113,7 +113,7 @@ class MasterDataService:
     def create_bom(data):
         if not data.get("parent_product_id") or not data.get("component_sku") or not data.get("component_name"):
             raise ValidationError("Parent product ID, component SKU, and component name are required.")
-        product = Product.query.get(data["parent_product_id"])
+        product = db.session.get(Product, data["parent_product_id"])
         if not product:
             raise ValidationError(f"Parent product {data['parent_product_id']} does not exist.")
         
@@ -130,7 +130,7 @@ class MasterDataService:
                 unit_of_measure=data.get("unit_of_measure", "PCS"),
                 scrap_factor=float(data.get("scrap_factor", 0.0)),
                 revision=data.get("revision", "1.0"),
-                effective_from=datetime.utcnow()
+                effective_from=utcnow()
             )
             session.add(bom)
             session.flush()
@@ -179,4 +179,3 @@ class MasterDataService:
             )
             session.add(s)
             return s.to_dict()
-

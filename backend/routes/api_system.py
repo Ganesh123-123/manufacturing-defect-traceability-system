@@ -21,6 +21,7 @@ def health():
     }), 200
 
 @bp.route("/validate", methods=["GET", "POST"])
+@bp.route("/audit-summary", methods=["GET"])
 def validate_system():
     summary = run_full_database_validation(db.session)
     export_dir = current_app.config.get("EXPORT_DIR", "backend/exports")

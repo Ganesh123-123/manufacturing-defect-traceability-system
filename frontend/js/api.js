@@ -1,9 +1,7 @@
 /**
  * Centralized API Client for Manufacturing Defect Traceability System
  */
-const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-    ? 'http://127.0.0.1:5000/api' 
-    : '/api';
+const API_BASE_URL = `${window.location.origin}/api`;
 
 class ApiClient {
     static async request(endpoint, options = {}) {
@@ -87,4 +85,3 @@ class ApiClient {
         }
     }
 }
-

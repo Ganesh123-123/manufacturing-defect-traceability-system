@@ -162,3 +162,4 @@ Returns live KPI cards computed from MySQL tables.
   "total_suppliers": 50
 }
 ```
+

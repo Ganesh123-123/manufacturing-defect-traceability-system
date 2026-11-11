@@ -704,7 +704,7 @@ class Modules {
                                         <h6 class="fw-bold text-dark mb-1">${m.name}</h6>
                                         <p class="text-muted small mb-2"><i class="fa-solid fa-industry me-1"></i>${m.line} &bull; ${m.location}</p>
                                         <div class="small text-secondary mb-3"><strong>Type:</strong> ${m.type}</div>
-                                        <button class="btn btn-sm btn-outline-primary w-100" onclick="TraceabilityModule.quickTrace('machine', '${m.id}'); app.navigate('traceability');">Trace Machine History</button>
+                                        <button class="btn btn-sm btn-outline-primary w-100" onclick="app.navigate('traceability', { type: 'machine', id: '${m.id}' });">Trace Machine History</button>
                                     </div>
                                 </div>
                             `).join("")}
@@ -1519,4 +1519,3 @@ class Modules {
         `;
     }
 }
-

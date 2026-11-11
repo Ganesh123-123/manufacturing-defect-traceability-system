@@ -2,6 +2,7 @@ import os
 import json
 import csv
 from datetime import datetime
+from backend.time_utils import utcnow
 
 class DataExporter:
     @staticmethod
@@ -9,7 +10,7 @@ class DataExporter:
         os.makedirs(export_dir, exist_ok=True)
         manifest = {
             "system": "Manufacturing Defect Traceability & Quality Management System",
-            "export_timestamp": datetime.utcnow().isoformat(),
+            "export_timestamp": utcnow().isoformat(),
             "exported_tables": list(dataset.keys()),
             "table_counts": {k: len(v) for k, v in dataset.items()},
             "files": []
@@ -73,7 +74,7 @@ class DataExporter:
     def export_sql(dataset, sql_path):
         with open(sql_path, "w", encoding="utf-8") as f:
             f.write("-- Manufacturing Defect Traceability System Seed Data\n")
-            f.write(f"-- Generated at {datetime.utcnow().isoformat()}\n\n")
+            f.write(f"-- Generated at {utcnow().isoformat()}\n\n")
             f.write("SET FOREIGN_KEY_CHECKS = 0;\n\n")
 
             for table_name, records in dataset.items():

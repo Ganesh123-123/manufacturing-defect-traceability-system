@@ -273,21 +273,20 @@ PORT=5000
 
 ## 8. Execution Instructions
 
-### Start MySQL Server
-Ensure MySQL 8.0 is running on your configured host and port.
+### Windows (Start Everything with One Command)
+From the project root, run:
+```bat
+run_all.bat
+```
+The script uses the project virtual environment when available, reuses healthy services, and starts the bundled MySQL instance on port 3307 if needed. The Flask backend also serves the frontend, so both run on one port and one URL: **`http://localhost:5000`**. The script opens the app in your browser after checking database and API health. The frontend is static HTML/CSS/JavaScript, so `npm install` is not required.
 
-### Start Flask Backend Server
+### Manual Start
+Ensure MySQL 8.0 is running on your configured host and port. Then start the unified frontend and backend server:
+
 ```bash
 python backend/app.py
 ```
-*The Flask REST API will start on `http://127.0.0.1:5000`.*
-
-### Start Frontend Client
-In a separate terminal:
-```bash
-python -m http.server 8000 --directory frontend
-```
-*Open your browser and navigate to: **`http://localhost:8000`**.*
+Open **`http://localhost:5000`**. API endpoints remain available under **`http://localhost:5000/api`**.
 
 ---
 
@@ -425,4 +424,3 @@ Developed in compliance with:
 - **ISO 9001:2015 Clause 8.5.2** (Identification and Traceability)
 - **IATF 16949 Section 8.5.2.1** (Automotive Component Traceability)
 - **FDA 21 CFR Part 820.65** (Medical Device Traceability)
-

@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.validation.exceptions import (
     ValidationError,
     LifecycleViolationException,
@@ -237,7 +237,7 @@ def run_full_database_validation(db_session):
     validation_status = "PASSED" if failed_checks == 0 else "ANOMALIES_DETECTED"
 
     summary = {
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": utcnow().isoformat(),
         "total_records": total_records,
         "entity_counts": counts,
         "total_checks": total_checks,
@@ -248,4 +248,3 @@ def run_full_database_validation(db_session):
         "detected_anomalies": detected_anomalies
     }
     return summary
-

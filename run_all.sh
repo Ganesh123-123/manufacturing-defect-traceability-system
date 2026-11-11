@@ -32,3 +32,4 @@ echo "Press CTRL+C to terminate all services."
 
 trap "kill $BACKEND_PID $FRONTEND_PID" EXIT
 wait
+

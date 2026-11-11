@@ -17,7 +17,11 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(na
 logger = logging.getLogger("manufacturing_backend")
 
 def create_app(config_class=Config):
-    app = Flask(__name__)
+    app = Flask(
+        __name__,
+        static_folder=os.path.join(BASE_DIR, "frontend"),
+        static_url_path=""
+    )
     app.config.from_object(config_class)
 
     # Enable CORS
@@ -31,13 +35,7 @@ def create_app(config_class=Config):
 
     @app.route("/")
     def index():
-        return jsonify({
-            "service": "Manufacturing Defect Traceability & Quality Management System API",
-            "version": "1.0.0",
-            "status": "online",
-            "docs": "/docs",
-            "api_prefix": "/api"
-        }), 200
+        return app.send_static_file("index.html")
 
     @app.errorhandler(404)
     def not_found(e):

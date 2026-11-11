@@ -83,6 +83,15 @@ def test_analytics_endpoints(client):
     assert pf_res.get_json()["failed_quantity"] == 10
 
 def test_system_audit_endpoints(client):
+    # The unified server serves the frontend and API on the same origin.
+    with client.get("/") as page_res:
+        assert page_res.status_code == 200
+        assert b"<html" in page_res.data.lower()
+
+    with client.get("/css/style.css") as asset_res:
+        assert asset_res.status_code == 200
+        assert b"@media" in asset_res.data
+
     # Test health
     h_res = client.get("/api/system/health")
     assert h_res.status_code == 200
@@ -101,4 +110,3 @@ def test_system_audit_endpoints(client):
     assert anom_res.status_code == 200
     scenarios = anom_res.get_json()
     assert len(scenarios) == 5
-

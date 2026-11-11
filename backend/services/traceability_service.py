@@ -1,3 +1,4 @@
+from backend.database.connection import db
 from backend.models import (
     Defect, InspectionResult, ProductionOrder, Product, MaterialLot,
     Supplier, Machine, ProcessStep, BOM, MaterialConsumption,
@@ -35,7 +36,7 @@ class TraceabilityService:
 
     @staticmethod
     def trace_defect(defect_id):
-        defect = Defect.query.get(defect_id)
+        defect = db.session.get(Defect, defect_id)
         if not defect:
             raise ValidationError(f"Defect '{defect_id}' not found in traceability index.", code="NOT_FOUND")
 
@@ -65,7 +66,7 @@ class TraceabilityService:
             })
 
         # 3. Production Order
-        order = ProductionOrder.query.get(defect.production_order_id)
+        order = db.session.get(ProductionOrder, defect.production_order_id)
         if order:
             chain["nodes"]["production_order"] = order.to_dict()
         else:
@@ -166,7 +167,7 @@ class TraceabilityService:
 
     @staticmethod
     def trace_product(product_id):
-        product = Product.query.get(product_id)
+        product = db.session.get(Product, product_id)
         if not product:
             raise ValidationError(f"Product '{product_id}' not found.", code="NOT_FOUND")
 
@@ -186,7 +187,7 @@ class TraceabilityService:
 
     @staticmethod
     def trace_production_order(order_id):
-        order = ProductionOrder.query.get(order_id)
+        order = db.session.get(ProductionOrder, order_id)
         if not order:
             raise ValidationError(f"Production Order '{order_id}' not found.", code="NOT_FOUND")
 
@@ -203,7 +204,7 @@ class TraceabilityService:
 
     @staticmethod
     def trace_material_lot(lot_id):
-        lot = MaterialLot.query.get(lot_id)
+        lot = db.session.get(MaterialLot, lot_id)
         if not lot:
             raise ValidationError(f"Material Lot '{lot_id}' not found.", code="NOT_FOUND")
 
@@ -219,7 +220,7 @@ class TraceabilityService:
 
     @staticmethod
     def trace_supplier(supplier_id):
-        supplier = Supplier.query.get(supplier_id)
+        supplier = db.session.get(Supplier, supplier_id)
         if not supplier:
             raise ValidationError(f"Supplier '{supplier_id}' not found.", code="NOT_FOUND")
 
@@ -239,18 +240,27 @@ class TraceabilityService:
 
     @staticmethod
     def trace_machine(machine_id):
-        machine = Machine.query.get(machine_id)
+        machine = db.session.get(Machine, machine_id)
         if not machine:
             raise ValidationError(f"Machine '{machine_id}' not found.", code="NOT_FOUND")
 
-        inspections = machine.inspections
-        defects = machine.defects
+        inspections = sorted(
+            machine.inspections,
+            key=lambda inspection: inspection.inspected_at,
+            reverse=True
+        )
+        defects = sorted(
+            machine.defects,
+            key=lambda defect: defect.detected_at,
+            reverse=True
+        )
 
         return {
             "query_type": "machine",
             "query_id": machine_id,
             "machine": machine.to_dict(),
             "inspections_count": len(inspections),
+            "inspections": [inspection.to_dict() for inspection in inspections[:30]],
             "defects_count": len(defects),
             "defects": [d.to_dict() for d in defects[:30]]
         }

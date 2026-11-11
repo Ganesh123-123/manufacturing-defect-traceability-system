@@ -61,3 +61,4 @@ This document details the 5 controlled manufacturing anomaly scenarios injected 
    - Click **`Scenario 1 (Broken Lot)`** &rarr; Inspect the red-flagged Material Lot node and diagnostic banner.
    - Click **`Scenario 5 (Broken WO)`** &rarr; Inspect the missing work order warning.
 3. Open **[http://localhost:8000/#reports](http://localhost:8000/#reports)** to view the live **Ground Truth Anomaly Log** and **Automated Quality & Integrity Validation Audit** table.
+

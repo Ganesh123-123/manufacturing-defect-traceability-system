@@ -5,11 +5,12 @@ from backend.validation.exceptions import ValidationError
 bp = Blueprint("traceability", __name__, url_prefix="/api")
 
 @bp.route("/traceability", methods=["GET"])
+@bp.route("/traceability/tree", methods=["GET"])
 def trace_entity():
-    q_type = request.args.get("type", "defect")
-    q_id = request.args.get("id")
+    q_type = request.args.get("type") or request.args.get("entity_type") or "defect"
+    q_id = request.args.get("id") or request.args.get("entity_id")
     if not q_id:
-        return jsonify({"error": "Query parameter 'id' is required.", "code": "MISSING_PARAM"}), 400
+        return jsonify({"error": "Query parameter 'id' or 'entity_id' is required.", "code": "MISSING_PARAM"}), 400
     
     try:
         chain = TraceabilityService.trace(q_type, q_id)

@@ -1,4 +1,4 @@
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.database.connection import db
 
 class Product(db.Model):
@@ -11,8 +11,8 @@ class Product(db.Model):
     target_cycle_time_mins = db.Column(db.Float, default=15.0)
     standard_cost = db.Column(db.Float, default=0.0)
     is_active = db.Column(db.Boolean, default=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
+    updated_at = db.Column(db.DateTime, default=utcnow, onupdate=utcnow)
 
     # Relationships
     boms = db.relationship("BOM", backref="product", lazy=True, cascade="all, delete-orphan")
@@ -44,10 +44,10 @@ class BOM(db.Model):
     quantity_per_unit = db.Column(db.Float, nullable=False)
     unit_of_measure = db.Column(db.String(20), default="PCS")
     scrap_factor = db.Column(db.Float, default=0.0)
-    effective_from = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    effective_from = db.Column(db.DateTime, nullable=False, default=utcnow)
     effective_to = db.Column(db.DateTime, nullable=True)
     revision = db.Column(db.String(20), default="1.0")
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     def to_dict(self):
         return {
@@ -76,7 +76,7 @@ class Supplier(db.Model):
     country = db.Column(db.String(80), default="USA")
     rating = db.Column(db.Float, default=4.5)
     status = db.Column(db.String(30), default="ACTIVE")  # ACTIVE, APPROVED, ON_PROBATION, SUSPENDED
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     material_lots = db.relationship("MaterialLot", backref="supplier", lazy=True)
 
@@ -106,11 +106,11 @@ class MaterialLot(db.Model):
     initial_quantity = db.Column(db.Float, nullable=False)
     remaining_quantity = db.Column(db.Float, nullable=False)
     unit_of_measure = db.Column(db.String(20), default="PCS")
-    received_date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    received_date = db.Column(db.DateTime, nullable=False, default=utcnow)
     expiry_date = db.Column(db.DateTime, nullable=True)
     certificate_of_analysis = db.Column(db.String(100), nullable=True)
     status = db.Column(db.String(30), default="RELEASED")  # RECEIVED, QUARANTINED, RELEASED, CONSUMED, REJECTED
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     consumptions = db.relationship("MaterialConsumption", backref="material_lot", lazy=True)
     defects = db.relationship("Defect", backref="material_lot", lazy=True)
@@ -150,7 +150,7 @@ class ProductionOrder(db.Model):
     actual_start_date = db.Column(db.DateTime, nullable=True)
     actual_end_date = db.Column(db.DateTime, nullable=True)
     batch_number = db.Column(db.String(64), nullable=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     consumptions = db.relationship("MaterialConsumption", backref="production_order", lazy=True)
     inspections = db.relationship("InspectionResult", backref="production_order", lazy=True)
@@ -190,7 +190,7 @@ class Machine(db.Model):
     location = db.Column(db.String(80))
     status = db.Column(db.String(30), default="OPERATIONAL")  # OPERATIONAL, MAINTENANCE, OFFLINE, DECOMMISSIONED
     calibration_due_date = db.Column(db.DateTime, nullable=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     step_machines = db.relationship("ProcessStepMachine", backref="machine", lazy=True)
     inspections = db.relationship("InspectionResult", backref="machine", lazy=True)
@@ -220,7 +220,7 @@ class ProcessStep(db.Model):
     standard_duration_mins = db.Column(db.Float, default=10.0)
     inspection_required = db.Column(db.Boolean, default=True)
     description = db.Column(db.Text, nullable=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     step_machines = db.relationship("ProcessStepMachine", backref="process_step", lazy=True)
     inspection_plans = db.relationship("InspectionPlan", backref="process_step", lazy=True)
@@ -248,7 +248,7 @@ class ProcessStepMachine(db.Model):
     machine_id = db.Column(db.String(32), db.ForeignKey("machines.id"), nullable=False)
     is_primary = db.Column(db.Boolean, default=True)
     setup_time_mins = db.Column(db.Float, default=15.0)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     def to_dict(self):
         return {
@@ -275,7 +275,7 @@ class InspectionPlan(db.Model):
     tolerance_minor = db.Column(db.Float, default=2.5)
     criteria = db.Column(db.Text, nullable=True)
     is_active = db.Column(db.Boolean, default=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     inspection_results = db.relationship("InspectionResult", backref="inspection_plan", lazy=True)
 
@@ -310,10 +310,10 @@ class InspectionResult(db.Model):
     passed_quantity = db.Column(db.Integer, nullable=False, default=0)
     failed_quantity = db.Column(db.Integer, nullable=False, default=0)
     result = db.Column(db.String(30), default="PASS", index=True)  # PASS, FAIL, CONDITIONAL_PASS
-    inspected_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    inspected_at = db.Column(db.DateTime, nullable=False, default=utcnow)
     inspector_name = db.Column(db.String(100), default="Quality Inspector")
     notes = db.Column(db.Text, nullable=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     defects = db.relationship("Defect", backref="inspection_result", lazy=True)
 
@@ -357,8 +357,8 @@ class Defect(db.Model):
     root_cause_category = db.Column(db.String(50), default="MATERIAL")  # MATERIAL, MACHINE, METHOD, MANPOWER, ENVIRONMENT
     description = db.Column(db.Text, nullable=True)
     status = db.Column(db.String(30), default="IDENTIFIED", index=True)  # IDENTIFIED, CONTAINED, UNDER_INVESTIGATION, CAPA_INITIATED, RESOLVED, CLOSED
-    detected_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    detected_at = db.Column(db.DateTime, nullable=False, default=utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     corrective_actions = db.relationship("CorrectiveAction", backref="defect", lazy=True)
     containment_actions = db.relationship("ContainmentAction", backref="defect", lazy=True)
@@ -405,7 +405,7 @@ class ContainmentAction(db.Model):
     target_lot_id = db.Column(db.String(64), db.ForeignKey("material_lots.id"), nullable=True)
     quarantined_quantity = db.Column(db.Float, default=0.0)
     status = db.Column(db.String(30), default="ACTIVE")  # ACTIVE, COMPLETED, CANCELLED
-    initiated_at = db.Column(db.DateTime, default=datetime.utcnow)
+    initiated_at = db.Column(db.DateTime, default=utcnow)
     completed_at = db.Column(db.DateTime, nullable=True)
 
     def to_dict(self):
@@ -440,7 +440,7 @@ class CorrectiveAction(db.Model):
     verified_by = db.Column(db.String(100), nullable=True)
     verification_notes = db.Column(db.Text, nullable=True)
     closure_date = db.Column(db.DateTime, nullable=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     events = db.relationship("CorrectiveActionEvent", backref="corrective_action", lazy=True)
 
@@ -474,8 +474,8 @@ class MaterialConsumption(db.Model):
     bom_id = db.Column(db.Integer, db.ForeignKey("boms.id"), nullable=True)
     consumed_quantity = db.Column(db.Float, nullable=False)
     unit_of_measure = db.Column(db.String(20), default="PCS")
-    consumed_at = db.Column(db.DateTime, default=datetime.utcnow)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    consumed_at = db.Column(db.DateTime, default=utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     bom = db.relationship("BOM", backref="consumptions", lazy=True)
 
@@ -504,7 +504,7 @@ class ProductionOrderMaterial(db.Model):
     allocated_quantity = db.Column(db.Float, default=0.0)
     consumed_quantity = db.Column(db.Float, default=0.0)
     unit_of_measure = db.Column(db.String(20), default="PCS")
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=utcnow)
 
     def to_dict(self):
         return {
@@ -531,7 +531,7 @@ class ProductionEvent(db.Model):
     status_from = db.Column(db.String(30))
     status_to = db.Column(db.String(30))
     details = db.Column(db.Text, nullable=True)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=utcnow)
 
     def to_dict(self):
         return {
@@ -556,7 +556,7 @@ class DefectEvent(db.Model):
     from_status = db.Column(db.String(30))
     to_status = db.Column(db.String(30))
     note = db.Column(db.Text, nullable=True)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=utcnow)
 
     def to_dict(self):
         return {
@@ -580,7 +580,7 @@ class CorrectiveActionEvent(db.Model):
     to_status = db.Column(db.String(30))
     changed_by = db.Column(db.String(100), nullable=True)
     note = db.Column(db.Text, nullable=True)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=utcnow)
 
     def to_dict(self):
         return {
@@ -593,4 +593,3 @@ class CorrectiveActionEvent(db.Model):
             "note": self.note,
             "timestamp": self.timestamp.isoformat() if self.timestamp else None
         }
-

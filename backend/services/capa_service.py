@@ -1,4 +1,4 @@
-from datetime import datetime
+from backend.time_utils import utcnow
 from backend.database.connection import db, get_session
 from backend.models import CorrectiveAction, Defect, CorrectiveActionEvent, DefectEvent
 from backend.validation.exceptions import ValidationError, LifecycleViolationException
@@ -29,7 +29,7 @@ class CAPAService:
 
     @staticmethod
     def get_capa(capa_id):
-        capa = CorrectiveAction.query.get(capa_id)
+        capa = db.session.get(CorrectiveAction, capa_id)
         if not capa:
             raise ValidationError(f"Corrective Action {capa_id} not found", code="NOT_FOUND")
         res = capa.to_dict()
@@ -40,14 +40,14 @@ class CAPAService:
     @staticmethod
     def create_capa(data):
         defect_id = data.get("defect_id")
-        defect = Defect.query.get(defect_id)
+        defect = db.session.get(Defect, defect_id)
         if not defect_id or not defect:
             raise ValidationError(f"Valid defect_id is required. Defect {defect_id} not found.")
 
         capa_id = data.get("id")
         if not capa_id:
             raise ValidationError("CAPA id is required.")
-        if CorrectiveAction.query.get(capa_id):
+        if db.session.get(CorrectiveAction, capa_id):
             raise ValidationError(f"Corrective Action {capa_id} already exists.", code="DUPLICATE_KEY")
 
         with get_session() as session:
@@ -62,7 +62,7 @@ class CAPAService:
                 preventive_action_plan=data.get("preventive_action_plan", "Poka-yoke jig update and monthly preventive check."),
                 status="OPEN",
                 assigned_to=data.get("assigned_to", "Lead Quality Engineer"),
-                target_date=datetime.utcnow()
+                target_date=utcnow()
             )
             session.add(capa)
 
@@ -92,7 +92,7 @@ class CAPAService:
 
     @staticmethod
     def verify_capa(capa_id, data):
-        capa = CorrectiveAction.query.get(capa_id)
+        capa = db.session.get(CorrectiveAction, capa_id)
         if not capa:
             raise ValidationError(f"Corrective Action {capa_id} not found.")
 
@@ -101,7 +101,7 @@ class CAPAService:
 
         with get_session() as session:
             old_status = capa.status
-            capa.verification_date = datetime.utcnow()
+            capa.verification_date = utcnow()
             capa.verified_by = verified_by
             capa.verification_notes = notes
             capa.status = "VERIFIED"
@@ -119,7 +119,7 @@ class CAPAService:
 
     @staticmethod
     def close_capa(capa_id, data=None):
-        capa = CorrectiveAction.query.get(capa_id)
+        capa = db.session.get(CorrectiveAction, capa_id)
         if not capa:
             raise ValidationError(f"Corrective Action {capa_id} not found.")
 
@@ -147,7 +147,7 @@ class CAPAService:
         with get_session() as session:
             old_status = capa.status
             capa.status = "CLOSED"
-            capa.closure_date = datetime.utcnow()
+            capa.closure_date = utcnow()
 
             event = CorrectiveActionEvent(
                 capa_id=capa_id,
@@ -172,4 +172,3 @@ class CAPAService:
                 session.add(def_event)
 
             return capa.to_dict()
-

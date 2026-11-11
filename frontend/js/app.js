@@ -19,11 +19,23 @@ class App {
     }
 
     setupNavigation() {
+        const sidebarToggle = document.getElementById("sidebar-toggle");
+        const sidebarBackdrop = document.getElementById("sidebar-backdrop");
+
+        sidebarToggle?.addEventListener("click", () => {
+            const isOpen = document.body.classList.toggle("sidebar-open");
+            sidebarToggle.setAttribute("aria-expanded", String(isOpen));
+            sidebarToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+        });
+
+        sidebarBackdrop?.addEventListener("click", () => this.closeSidebar());
+
         document.querySelectorAll(".sidebar-menu a[data-page]").forEach(link => {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
                 const page = link.getAttribute("data-page");
                 this.navigate(page);
+                this.closeSidebar();
             });
         });
 
@@ -35,7 +47,14 @@ class App {
         });
     }
 
-    navigate(pageName) {
+    closeSidebar() {
+        document.body.classList.remove("sidebar-open");
+        const sidebarToggle = document.getElementById("sidebar-toggle");
+        sidebarToggle?.setAttribute("aria-expanded", "false");
+        sidebarToggle?.setAttribute("aria-label", "Open navigation");
+    }
+
+    navigate(pageName, traceQuery = null) {
         this.currentPage = pageName;
         window.location.hash = pageName;
 
@@ -105,7 +124,10 @@ class App {
                 Modules.renderCAPA(1);
                 break;
             case "traceability":
-                TraceabilityModule.init();
+                TraceabilityModule.init(
+                    traceQuery ? traceQuery.type : undefined,
+                    traceQuery ? traceQuery.id : undefined
+                );
                 break;
             case "reports":
                 Modules.renderReports();
@@ -167,4 +189,3 @@ let app;
 document.addEventListener("DOMContentLoaded", () => {
     app = new App();
 });
-

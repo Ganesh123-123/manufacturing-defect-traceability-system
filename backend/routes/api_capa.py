@@ -5,6 +5,7 @@ from backend.validation.exceptions import ValidationError, LifecycleViolationExc
 bp = Blueprint("capa", __name__, url_prefix="/api")
 
 @bp.route("/capas", methods=["GET"])
+@bp.route("/capa", methods=["GET"])
 def get_capas():
     page = int(request.args.get("page", 1))
     per_page = int(request.args.get("per_page", 50))
