@@ -1,0 +1,54 @@
+name: Manufacturing Quality System CI
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+          MYSQL_DATABASE: defect_traceability
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run Pytest Suite
+        env:
+          TEST_DATABASE_URL: sqlite:///:memory:
+        run: |
+          python -m pytest backend/tests/ -v
+
+      - name: Verify Seed 20261022 Reproducibility
+        run: |
+          python -m generator.generate_data --verify-reproducibility
+
+      - name: Generate Synthetic Data & Run 47,000+ Integrity Audit
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_PORT: 3306
+          MYSQL_USER: root
+          MYSQL_PASSWORD: ''
+          MYSQL_DB: defect_traceability
+        run: |
+          python -m generator.generate_data --scale starter
