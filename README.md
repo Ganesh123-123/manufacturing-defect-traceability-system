@@ -294,9 +294,9 @@ The repository includes a Render Blueprint in `render.yaml`. To deploy:
 
 1. Push this repository to GitHub.
 2. In Render, choose **New → Blueprint**, connect the repository, and apply the blueprint.
-3. Render creates the web service and PostgreSQL database. Wait for the web service health check at `/api/system/health` to pass, then open its `onrender.com` URL.
+3. Render creates the web service. Provide the connection URL for a PostgreSQL database dedicated to this app, then wait for the health check at `/api/system/health` to pass and open its `onrender.com` URL.
 
-The web service serves both the dashboard and API. Render supplies `PORT` and `DATABASE_URL`; a generated `SECRET_KEY` is configured by the blueprint. PostgreSQL support is included alongside the local MySQL setup. The first deployment starts with an empty database; to load starter demonstration data, open the service shell and run:
+The web service serves both the dashboard and API. The Blueprint generates a `SECRET_KEY`; Render supplies `PORT`. On first sync, provide `DATABASE_URL` for a PostgreSQL database. The Blueprint does not create a database, so use a database dedicated to this app; Render's free tier allows only one active free database per account. PostgreSQL support is included alongside the local MySQL setup. To load starter demonstration data, open the service shell and run:
 
 ```bash
 python -m backend.generator.generate_data --scale starter
