@@ -121,7 +121,12 @@ class AnalyticsService:
     @staticmethod
     def get_monthly_defect_trends():
         # Aggregated trends
-        period_expr = func.strftime('%Y-%m', Defect.detected_at) if db.engine.name == 'sqlite' else func.date_format(Defect.detected_at, '%Y-%m')
+        if db.engine.name == "sqlite":
+            period_expr = func.strftime("%Y-%m", Defect.detected_at)
+        elif db.engine.name == "postgresql":
+            period_expr = func.to_char(Defect.detected_at, "YYYY-MM")
+        else:
+            period_expr = func.date_format(Defect.detected_at, "%Y-%m")
         results = db.session.query(
             period_expr.label("month"),
             func.count(Defect.id),
