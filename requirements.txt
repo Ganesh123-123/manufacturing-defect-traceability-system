@@ -1,0 +1,21 @@
+# Manufacturing Defect Traceability & Quality Management System
+# Core Backend & REST API
+Flask>=3.0.0
+flask-cors>=5.0.0
+Flask-SQLAlchemy>=3.1.1
+SQLAlchemy>=2.0.0
+
+# MySQL Database Drivers
+pymysql>=1.1.0
+mysql-connector-python>=9.0.0
+
+# Environment Configuration
+python-dotenv>=1.0.0
+
+# Synthetic Data Generation & Data Processing
+faker>=30.0.0
+pandas>=2.2.0
+
+# Testing & HTTP Clients
+pytest>=8.0.0
+requests>=2.31.0
