@@ -1,6 +1,6 @@
 {
   "system": "Manufacturing Defect Traceability & Quality Management System",
-  "export_timestamp": "2026-11-11T06:20:52.137094",
+  "export_timestamp": "2026-11-14T12:51:33.674584",
   "exported_tables": [
     "products",
     "boms",

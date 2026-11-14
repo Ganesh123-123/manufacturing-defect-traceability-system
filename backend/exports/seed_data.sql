@@ -1,5 +1,5 @@
 -- Manufacturing Defect Traceability System Seed Data
--- Generated at 2026-11-11T06:20:53.918763
+-- Generated at 2026-11-14T12:51:35.589830
 
 SET FOREIGN_KEY_CHECKS = 0;
 
