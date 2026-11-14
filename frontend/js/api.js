@@ -4,7 +4,7 @@
 const API_BASE_URL = (() => {
     // When served from standalone frontend dev server (e.g. port 8000) or file:, route to Flask API port 5000
     if (window.location.port === "8000" || window.location.protocol === "file:") {
-        const host = (window.location.hostname === "localhost" || !window.location.hostname) ? "127.0.0.1" : window.location.hostname;
+        const host = window.location.hostname || "localhost";
         return `http://${host}:5000/api`;
     }
     // Unified portal (port 5000) or production deployment (Render / Docker)
