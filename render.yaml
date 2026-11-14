@@ -2,7 +2,7 @@ services:
   - type: web
     name: manufacturing-defect-traceability
     runtime: python
-    plan: free
+    plan: starter
     buildCommand: pip install -r backend/requirements.txt
     startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120 backend.wsgi:app
     healthCheckPath: /api/system/health
