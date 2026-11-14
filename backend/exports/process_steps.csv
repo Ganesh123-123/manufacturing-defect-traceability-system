@@ -1,36 +1,31 @@
 id,step_code,name,sequence_number,standard_duration_mins,inspection_required,description,created_at
-STEP-001,STEP-001,Raw Material Receipt & Assay,10,13.8,False,Standard operating procedure for Raw Material Receipt & Assay,2025-07-05T08:00:00
-STEP-002,STEP-002,Rough Machining,20,13.1,True,Standard operating procedure for Rough Machining,2025-07-05T08:00:00
-STEP-003,STEP-003,Precision CNC Turning,30,28.1,False,Standard operating procedure for Precision CNC Turning,2025-07-05T08:00:00
-STEP-004,STEP-004,Milling & Pocketing,40,28.4,True,Standard operating procedure for Milling & Pocketing,2025-07-05T08:00:00
-STEP-005,STEP-005,Deburring & Ultrasonic Wash,50,21.6,False,Standard operating procedure for Deburring & Ultrasonic Wash,2025-07-05T08:00:00
-STEP-006,STEP-006,Thermal Heat Treatment,60,21.4,True,Standard operating procedure for Thermal Heat Treatment,2025-07-05T08:00:00
-STEP-007,STEP-007,Surface Anodizing & Passivation,70,16.8,False,Standard operating procedure for Surface Anodizing & Passivation,2025-07-05T08:00:00
-STEP-008,STEP-008,Micro-soldering & SMT Placement,80,29.3,True,Standard operating procedure for Micro-soldering & SMT Placement,2025-07-05T08:00:00
-STEP-009,STEP-009,Sub-Assembly Insertion,90,11.0,False,Standard operating procedure for Sub-Assembly Insertion,2025-07-05T08:00:00
-STEP-010,STEP-010,Automated Optical Inspection,100,20.1,True,Standard operating procedure for Automated Optical Inspection,2025-07-05T08:00:00
-STEP-011,STEP-011,Torque & Fastener Assembly,110,24.2,False,Standard operating procedure for Torque & Fastener Assembly,2025-07-05T08:00:00
-STEP-012,STEP-012,Leak Testing & Pressure Decay,120,17.8,True,Standard operating procedure for Leak Testing & Pressure Decay,2025-07-05T08:00:00
-STEP-013,STEP-013,Laser Marking & Barcoding,130,19.0,False,Standard operating procedure for Laser Marking & Barcoding,2025-07-05T08:00:00
-STEP-014,STEP-014,Functional Bench Test,140,16.8,True,Standard operating procedure for Functional Bench Test,2025-07-05T08:00:00
-STEP-015,STEP-015,Final Cleanroom Packaging,150,17.9,False,Standard operating procedure for Final Cleanroom Packaging,2025-07-05T08:00:00
-STEP-016,STEP-016,Raw Material Receipt & Assay Stage-2,160,10.9,True,Standard operating procedure for Raw Material Receipt & Assay Stage-2,2025-07-05T08:00:00
-STEP-017,STEP-017,Rough Machining Stage-2,170,27.4,False,Standard operating procedure for Rough Machining Stage-2,2025-07-05T08:00:00
-STEP-018,STEP-018,Precision CNC Turning Stage-2,180,21.1,True,Standard operating procedure for Precision CNC Turning Stage-2,2025-07-05T08:00:00
-STEP-019,STEP-019,Milling & Pocketing Stage-2,190,13.1,False,Standard operating procedure for Milling & Pocketing Stage-2,2025-07-05T08:00:00
-STEP-020,STEP-020,Deburring & Ultrasonic Wash Stage-2,200,25.7,True,Standard operating procedure for Deburring & Ultrasonic Wash Stage-2,2025-07-05T08:00:00
-STEP-021,STEP-021,Thermal Heat Treatment Stage-2,210,25.1,False,Standard operating procedure for Thermal Heat Treatment Stage-2,2025-07-05T08:00:00
-STEP-022,STEP-022,Surface Anodizing & Passivation Stage-2,220,25.6,True,Standard operating procedure for Surface Anodizing & Passivation Stage-2,2025-07-05T08:00:00
-STEP-023,STEP-023,Micro-soldering & SMT Placement Stage-2,230,18.8,False,Standard operating procedure for Micro-soldering & SMT Placement Stage-2,2025-07-05T08:00:00
-STEP-024,STEP-024,Sub-Assembly Insertion Stage-2,240,14.4,True,Standard operating procedure for Sub-Assembly Insertion Stage-2,2025-07-05T08:00:00
-STEP-025,STEP-025,Automated Optical Inspection Stage-2,250,24.1,False,Standard operating procedure for Automated Optical Inspection Stage-2,2025-07-05T08:00:00
-STEP-026,STEP-026,Torque & Fastener Assembly Stage-2,260,25.0,True,Standard operating procedure for Torque & Fastener Assembly Stage-2,2025-07-05T08:00:00
-STEP-027,STEP-027,Leak Testing & Pressure Decay Stage-2,270,26.1,False,Standard operating procedure for Leak Testing & Pressure Decay Stage-2,2025-07-05T08:00:00
-STEP-028,STEP-028,Laser Marking & Barcoding Stage-2,280,15.4,True,Standard operating procedure for Laser Marking & Barcoding Stage-2,2025-07-05T08:00:00
-STEP-029,STEP-029,Functional Bench Test Stage-2,290,24.9,False,Standard operating procedure for Functional Bench Test Stage-2,2025-07-05T08:00:00
-STEP-030,STEP-030,Final Cleanroom Packaging Stage-2,300,19.9,True,Standard operating procedure for Final Cleanroom Packaging Stage-2,2025-07-05T08:00:00
-STEP-031,STEP-031,Raw Material Receipt & Assay Stage-3,310,19.7,False,Standard operating procedure for Raw Material Receipt & Assay Stage-3,2025-07-05T08:00:00
-STEP-032,STEP-032,Rough Machining Stage-3,320,10.2,True,Standard operating procedure for Rough Machining Stage-3,2025-07-05T08:00:00
-STEP-033,STEP-033,Precision CNC Turning Stage-3,330,19.1,False,Standard operating procedure for Precision CNC Turning Stage-3,2025-07-05T08:00:00
-STEP-034,STEP-034,Milling & Pocketing Stage-3,340,21.7,True,Standard operating procedure for Milling & Pocketing Stage-3,2025-07-05T08:00:00
-STEP-035,STEP-035,Deburring & Ultrasonic Wash Stage-3,350,14.5,False,Standard operating procedure for Deburring & Ultrasonic Wash Stage-3,2025-07-05T08:00:00
+STEP-001,STEP-001,Raw Material Receipt & Assay,10,16.4,False,Standard operating procedure for Raw Material Receipt & Assay,2025-07-05T08:00:00
+STEP-002,STEP-002,Rough Machining,20,8.8,True,Standard operating procedure for Rough Machining,2025-07-05T08:00:00
+STEP-003,STEP-003,Precision CNC Turning,30,10.5,False,Standard operating procedure for Precision CNC Turning,2025-07-05T08:00:00
+STEP-004,STEP-004,Milling & Pocketing,40,19.6,True,Standard operating procedure for Milling & Pocketing,2025-07-05T08:00:00
+STEP-005,STEP-005,Deburring & Ultrasonic Wash,50,22.8,False,Standard operating procedure for Deburring & Ultrasonic Wash,2025-07-05T08:00:00
+STEP-006,STEP-006,Thermal Heat Treatment,60,21.2,True,Standard operating procedure for Thermal Heat Treatment,2025-07-05T08:00:00
+STEP-007,STEP-007,Surface Anodizing & Passivation,70,11.2,False,Standard operating procedure for Surface Anodizing & Passivation,2025-07-05T08:00:00
+STEP-008,STEP-008,Micro-soldering & SMT Placement,80,24.7,True,Standard operating procedure for Micro-soldering & SMT Placement,2025-07-05T08:00:00
+STEP-009,STEP-009,Sub-Assembly Insertion,90,15.6,False,Standard operating procedure for Sub-Assembly Insertion,2025-07-05T08:00:00
+STEP-010,STEP-010,Automated Optical Inspection,100,14.1,True,Standard operating procedure for Automated Optical Inspection,2025-07-05T08:00:00
+STEP-011,STEP-011,Torque & Fastener Assembly,110,13.7,False,Standard operating procedure for Torque & Fastener Assembly,2025-07-05T08:00:00
+STEP-012,STEP-012,Leak Testing & Pressure Decay,120,24.4,True,Standard operating procedure for Leak Testing & Pressure Decay,2025-07-05T08:00:00
+STEP-013,STEP-013,Laser Marking & Barcoding,130,20.6,False,Standard operating procedure for Laser Marking & Barcoding,2025-07-05T08:00:00
+STEP-014,STEP-014,Functional Bench Test,140,21.0,True,Standard operating procedure for Functional Bench Test,2025-07-05T08:00:00
+STEP-015,STEP-015,Final Cleanroom Packaging,150,20.3,False,Standard operating procedure for Final Cleanroom Packaging,2025-07-05T08:00:00
+STEP-016,STEP-016,Raw Material Receipt & Assay Stage-2,160,29.4,True,Standard operating procedure for Raw Material Receipt & Assay Stage-2,2025-07-05T08:00:00
+STEP-017,STEP-017,Rough Machining Stage-2,170,25.3,False,Standard operating procedure for Rough Machining Stage-2,2025-07-05T08:00:00
+STEP-018,STEP-018,Precision CNC Turning Stage-2,180,8.4,True,Standard operating procedure for Precision CNC Turning Stage-2,2025-07-05T08:00:00
+STEP-019,STEP-019,Milling & Pocketing Stage-2,190,10.4,False,Standard operating procedure for Milling & Pocketing Stage-2,2025-07-05T08:00:00
+STEP-020,STEP-020,Deburring & Ultrasonic Wash Stage-2,200,26.7,True,Standard operating procedure for Deburring & Ultrasonic Wash Stage-2,2025-07-05T08:00:00
+STEP-021,STEP-021,Thermal Heat Treatment Stage-2,210,8.9,False,Standard operating procedure for Thermal Heat Treatment Stage-2,2025-07-05T08:00:00
+STEP-022,STEP-022,Surface Anodizing & Passivation Stage-2,220,23.7,True,Standard operating procedure for Surface Anodizing & Passivation Stage-2,2025-07-05T08:00:00
+STEP-023,STEP-023,Micro-soldering & SMT Placement Stage-2,230,14.6,False,Standard operating procedure for Micro-soldering & SMT Placement Stage-2,2025-07-05T08:00:00
+STEP-024,STEP-024,Sub-Assembly Insertion Stage-2,240,15.1,True,Standard operating procedure for Sub-Assembly Insertion Stage-2,2025-07-05T08:00:00
+STEP-025,STEP-025,Automated Optical Inspection Stage-2,250,16.2,False,Standard operating procedure for Automated Optical Inspection Stage-2,2025-07-05T08:00:00
+STEP-026,STEP-026,Torque & Fastener Assembly Stage-2,260,9.2,True,Standard operating procedure for Torque & Fastener Assembly Stage-2,2025-07-05T08:00:00
+STEP-027,STEP-027,Leak Testing & Pressure Decay Stage-2,270,25.6,False,Standard operating procedure for Leak Testing & Pressure Decay Stage-2,2025-07-05T08:00:00
+STEP-028,STEP-028,Laser Marking & Barcoding Stage-2,280,27.3,True,Standard operating procedure for Laser Marking & Barcoding Stage-2,2025-07-05T08:00:00
+STEP-029,STEP-029,Functional Bench Test Stage-2,290,9.1,False,Standard operating procedure for Functional Bench Test Stage-2,2025-07-05T08:00:00
+STEP-030,STEP-030,Final Cleanroom Packaging Stage-2,300,15.7,True,Standard operating procedure for Final Cleanroom Packaging Stage-2,2025-07-05T08:00:00

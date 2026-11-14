@@ -1,6 +1,6 @@
 {
   "system": "Manufacturing Defect Traceability & Quality Management System",
-  "export_timestamp": "2026-11-14T12:51:33.674584",
+  "export_timestamp": "2026-11-14T13:30:11.330978",
   "exported_tables": [
     "products",
     "boms",
@@ -21,23 +21,23 @@
     "capa_events"
   ],
   "table_counts": {
-    "products": 200,
-    "boms": 601,
-    "suppliers": 50,
-    "material_lots": 2000,
-    "machines": 25,
-    "process_steps": 35,
-    "step_machines": 35,
-    "inspection_plans": 200,
-    "production_orders": 5000,
-    "material_consumptions": 14276,
-    "production_events": 14000,
-    "inspections": 20000,
-    "defects": 1594,
-    "containment_actions": 996,
-    "corrective_actions": 1195,
-    "defect_events": 1594,
-    "capa_events": 2588
+    "products": 20,
+    "boms": 58,
+    "suppliers": 10,
+    "material_lots": 100,
+    "machines": 20,
+    "process_steps": 30,
+    "step_machines": 30,
+    "inspection_plans": 20,
+    "production_orders": 200,
+    "material_consumptions": 547,
+    "production_events": 560,
+    "inspections": 1000,
+    "defects": 83,
+    "containment_actions": 52,
+    "corrective_actions": 62,
+    "defect_events": 83,
+    "capa_events": 134
   },
   "files": [
     "products.json",
